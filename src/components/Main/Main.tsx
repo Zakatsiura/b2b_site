@@ -1,11 +1,15 @@
 import { MainSlider } from '../Slider/MainSlider';
 import style from './Main.module.css';
+import logo from '../../assets/images/Logo_original_stroked.png';
 
 const Main = () => {
     return (
         <div className={style.main__wrapper}>
             <div className={style.main__text}>
-                <h1>A few words about us</h1>
+                <div className={style.logo__block}>
+                    <img src={logo} className={style.logo} />
+                    <h1>A few words about us</h1>
+                </div>
                 <p>
                     B2B Aviation Trading is a well-established aviation company
                     based in Ukraine. With years of experience in the industry,

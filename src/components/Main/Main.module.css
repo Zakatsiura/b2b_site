@@ -1,9 +1,21 @@
 .main__wrapper {
     max-width: 1400px;
     margin: 50px auto;
+    padding: 10px;
+}
+
+.logo__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 180px;
 }
 
 .main__text {
+    font-size: 20px;
     text-indent: 16px;
     text-align: left;
 }
