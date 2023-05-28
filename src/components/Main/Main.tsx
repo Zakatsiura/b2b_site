@@ -1,4 +1,4 @@
-import { MainSlider } from '../Slider/MainSlider';
+import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
 import style from './Main.module.css';
 import logo from '../../assets/images/Logo_original_stroked.png';
