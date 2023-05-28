@@ -1,15 +1,22 @@
 import { MainSlider } from '../Slider/MainSlider';
+import { Partners } from '../Partners/Partners';
 import style from './Main.module.css';
 import logo from '../../assets/images/Logo_original_stroked.png';
+import h135 from '../../assets/images/H135.jpg';
 
 const Main = () => {
     return (
         <div className={style.main__wrapper}>
             <div className={style.main__text}>
                 <div className={style.logo__block}>
-                    <img src={logo} className={style.logo} />
+                    <img src={logo} className={style.logo} alt="logo" />
                     <h1 className={style.main__title}>A FEW WORDS ABOUT US</h1>
                 </div>
+                <img
+                    src={h135}
+                    className={style.main__picture}
+                    alt="h135 image"
+                />
                 <p>
                     B2B Aviation Trading is a well-established aviation company
                     based in Ukraine. With years of experience in the industry,
@@ -50,7 +57,9 @@ const Main = () => {
                 </p>
                 <hr />
                 <MainSlider />
+                <hr />
             </div>
+            <Partners />
         </div>
     );
 };

@@ -3,6 +3,11 @@
     margin: 50px auto;
     padding: 10px;
 }
+.main__picture {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
 
 .logo__block {
     display: flex;
