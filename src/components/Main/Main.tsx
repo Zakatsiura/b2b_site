@@ -8,7 +8,7 @@ const Main = () => {
             <div className={style.main__text}>
                 <div className={style.logo__block}>
                     <img src={logo} className={style.logo} />
-                    <h1>A few words about us</h1>
+                    <h1 className={style.main__title}>A FEW WORDS ABOUT US</h1>
                 </div>
                 <p>
                     B2B Aviation Trading is a well-established aviation company
