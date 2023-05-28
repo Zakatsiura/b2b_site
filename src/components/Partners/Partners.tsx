@@ -6,7 +6,7 @@ import lnz from '../../assets/icons/lnz-logo.png';
 const Partners = () => {
     return (
         <div className={style.partners__wrapper}>
-            <h2 className={style.partners__title}>OUR PARTNERS</h2>
+            <h1 className={style.partners__title}>OUR PARTNERS</h1>
             <div className={style.partners__info}>
                 <a
                     href="https://www.airbus.com/en/products-services/helicopters"
