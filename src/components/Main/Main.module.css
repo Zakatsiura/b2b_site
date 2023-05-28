@@ -1,0 +1,9 @@
+.main__wrapper {
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.main__text {
+    text-indent: 16px;
+    text-align: left;
+}

@@ -1,0 +1,6 @@
+.slider__wrapper {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    transition: opacity 0.5s ease-in-out;
+}
