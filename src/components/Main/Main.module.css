@@ -28,8 +28,11 @@
     text-align: left;
 }
 
-.flag {
-    display: flex;
-    justify-content: center;
-    /* text-align: center; */
+@media (max-width: 900px) {
+    .logo__block {
+        flex-direction: column;
+    }
+    .main__title {
+        text-align: center;
+    }
 }

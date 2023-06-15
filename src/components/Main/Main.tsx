@@ -3,17 +3,14 @@ import { Partners } from '../Partners/Partners';
 import style from './Main.module.css';
 import logo from '../../assets/images/Logo_original_stroked.png';
 import h135 from '../../assets/images/H135.jpg';
-import { GifComponent } from '../Flag/Flag';
 import flag from '../../assets/images/ukrainian-waving-flag-11.gif';
 
 const Main = () => {
     return (
         <div className={style.main__wrapper}>
-            <div className={style.flag}>
-                <GifComponent src={flag} alt="Flag" />
-            </div>
             <div className={style.main__text}>
                 <div className={style.logo__block}>
+                    <img className={style.logo} src={flag} alt="flag" />
                     <img src={logo} className={style.logo} alt="logo" />
                     <h1 className={style.main__title}>A FEW WORDS ABOUT US</h1>
                 </div>
