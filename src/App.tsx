@@ -1,6 +1,12 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-import { MainPage, AirCompanyPage, ServicePage, ContactPage } from './pages';
+import {
+    MainPage,
+    AirCompanyPage,
+    ServicePage,
+    ContactPage,
+    CertificatesPage,
+} from './pages';
 import { MainLayout } from './layouts/MainLayout';
 import './App.css';
 
@@ -13,6 +19,7 @@ function App() {
                 <Route path={'aircompany'} element={<AirCompanyPage />} />
                 <Route path={'service'} element={<ServicePage />} />
                 <Route path={'contact'} element={<ContactPage />} />
+                <Route path={'certificates'} element={<CertificatesPage />} />
             </Route>
         </Routes>
     );

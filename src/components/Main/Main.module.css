@@ -27,3 +27,9 @@
     text-indent: 16px;
     text-align: left;
 }
+
+.flag {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
