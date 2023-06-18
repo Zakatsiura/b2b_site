@@ -5,7 +5,7 @@ import menu from '../../assets/images/burger-menu-icon.jpg';
 import logo_small from '../../assets/images/logo_small.png';
 import { Menu } from '../Menu/Menu';
 import { Link } from 'react-router-dom';
-import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
