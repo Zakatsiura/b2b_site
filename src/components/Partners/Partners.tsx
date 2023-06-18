@@ -1,12 +1,27 @@
+import { useContext } from 'react';
+
 import style from './Partners.module.css';
 import airbus from '../../assets/icons/airbus-logo.png';
 import safran from '../../assets/icons/safran-logo.png';
 import lnz from '../../assets/icons/lnz-logo.png';
+import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
 
 const Partners = () => {
+    const languageContext = useContext(LanguageContext);
+
+    if (!languageContext) {
+        return null;
+    }
+
+    const { language } = languageContext;
+
     return (
         <div className={style.partners__wrapper}>
-            <h1 className={style.partners__title}>OUR PARTNERS</h1>
+            {language === 'en' ? (
+                <h1 className={style.partners__title}>OUR PARTNERS</h1>
+            ) : (
+                <h1 className={style.partners__title}>НАШІ ПАРТНЕРИ</h1>
+            )}
             <div className={style.partners__info}>
                 <a
                     href="https://www.airbus.com/en/products-services/helicopters"
