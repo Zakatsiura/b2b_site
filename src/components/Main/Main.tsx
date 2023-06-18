@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 
+import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
 import style from './Main.module.css';
@@ -8,7 +9,6 @@ import h135 from '../../assets/images/H135.jpg';
 import h125to from '../../assets/images/h125takeoff.jpg';
 import h125 from '../../assets/images/H125.jpg';
 import flag from '../../assets/images/ukrainian-waving-flag-11.gif';
-import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
 
 const Main: React.FC = () => {
     const languageContext = useContext(LanguageContext);
@@ -85,11 +85,12 @@ const Main: React.FC = () => {
                         </p>
                     ) : (
                         <p className={style.main__text}>
-                            Одним із ключових факторів, що сприяють компанії
-                            успіх - це його зобов'язання підтримувати. Місця
-                            компанії велика увага до важливості регулярного
-                            технічного обслуговування для забезпечення безпеки
-                            та ефективності своїх вертольотів.
+                            Одним із ключових факторів, що сприяє успіху
+                            компанії, є її прихильність до якісного
+                            обслуговування ПС. Компанія приділяє велику увагу
+                            важливості регулярного технічного обслуговування для
+                            забезпечення безпеки та ефективності своїх
+                            вертольотів.
                         </p>
                     )}
                     <img
