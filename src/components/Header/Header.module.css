@@ -28,6 +28,7 @@
 .burger {
     width: 36px;
     margin: 0 36px;
+    cursor: pointer;
 }
 
 .logo__small {
