@@ -5,6 +5,7 @@ import menu from '../../assets/images/burger-menu-icon.jpg';
 import logo_small from '../../assets/images/logo_small.png';
 import { Menu } from '../Menu/Menu';
 import { Link } from 'react-router-dom';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,13 @@ const Header = () => {
                     </div>
                 </Link>
             </div>
-            <div className={style.header__button} onClick={toggleMenu}>
-                <img src={menu} className={style.burger} />
+            <div className={style.rightside}>
+                <LanguageSwitcher />
+                <div className={style.header__button} onClick={toggleMenu}>
+                    <img src={menu} className={style.burger} />
+                </div>
+                <Menu isOpen={isOpen} onChange={setIsOpen} />
             </div>
-            <Menu isOpen={isOpen} onChange={setIsOpen} />
         </div>
     );
 };
