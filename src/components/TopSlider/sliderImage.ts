@@ -1,41 +1,45 @@
-import First from '../../assets/First.jpg';
-import Second from '../../assets/Second.jpg';
-import Third from '../../assets/Third.jpg';
+import First from '../../assets/images/First.jpg';
+import Second from '../../assets/images/Second.jpg';
+import Third from '../../assets/images/Third.jpg';
+import Fourth from '../../assets/images/Fourth.jpg';
+import Fivth from '../../assets/images/Fivth.jpg';
+import Sixth from '../../assets/images/Sixth.jpg';
+import Seventh from '../../assets/images/Seventh.jpg';
 
 export default [
     {
-        title: 'First Slide',
-        description: 'This is the first slider Image of our carousel',
+        title: '',
+        description: '',
         urls: First,
     },
     {
-        title: 'Second Slide',
-        description: 'This is the second slider Image of our carousel',
+        title: '',
+        description: '',
         urls: Second,
     },
     {
-        title: 'Third Slide',
-        description: 'This is the Third slider Image of our carousel',
+        title: '',
+        description: '',
         urls: Third,
     },
     {
-        title: 'Fourth Slide',
-        description: 'This is the Fourth slider Image of our carousel',
-        urls: 'https://mdbootstrap.com/img/Photos/Slides/img%20(133).jpg',
+        title: '',
+        description: '',
+        urls: Fourth,
     },
     {
-        title: 'Fifth Slide',
-        description: 'This is the Fifth slider Image of our carousel',
-        urls: 'https://mdbootstrap.com/img/Photos/Slides/img%20(147).jpg',
+        title: '',
+        description: '',
+        urls: Fivth,
     },
     {
-        title: 'Sixth Slide',
-        description: 'This is the Sixth slider Image of our carousel',
-        urls: 'https://mdbootstrap.com/img/Photos/Slides/img%20(105).jpg',
+        title: '',
+        description: '',
+        urls: Sixth,
     },
     {
-        title: 'Seventh Slide',
-        description: 'This is the Seventh slider Image of our carousel',
-        urls: 'https://mdbootstrap.com/img/Photos/Slides/img%20(102).jpg',
+        title: '',
+        description: '',
+        urls: Seventh,
     },
 ];

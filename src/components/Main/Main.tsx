@@ -22,7 +22,7 @@ const Main: React.FC = () => {
 
     return (
         <div>
-            <Slider/>
+            <Slider />
             <div className={style.main__top}>
                 <div className={style.upper__img}>
                     <img src={logo} className={style.logo} alt="logo" />
@@ -172,7 +172,9 @@ const Main: React.FC = () => {
                         </p>
                     )}
                     <hr />
+                    <br />
                     <MainSlider />
+                    <br />
                     <hr />
                 </div>
                 <Partners />
