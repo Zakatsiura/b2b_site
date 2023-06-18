@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 
 import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
+import Slider from '../TopSlider/Slider';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
 import style from './Main.module.css';
@@ -21,6 +22,7 @@ const Main: React.FC = () => {
 
     return (
         <div>
+            <Slider/>
             <div className={style.main__top}>
                 <div className={style.upper__img}>
                     <img src={logo} className={style.logo} alt="logo" />
