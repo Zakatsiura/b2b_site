@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 
 import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
-import Slider from '../TopSlider/Slider';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
+import { TopSlider } from '../TopSlider/TopSlider';
 import style from './Main.module.css';
 import logo from '../../assets/images/Logo_original_stroked.png';
 import h135 from '../../assets/images/H135.jpg';
@@ -22,7 +22,7 @@ const Main: React.FC = () => {
 
     return (
         <div>
-            <Slider />
+            <TopSlider />
             <div className={style.main__top}>
                 <div className={style.upper__img}>
                     <img src={logo} className={style.logo} alt="logo" />
@@ -50,6 +50,7 @@ const Main: React.FC = () => {
                                 ПРО НАШУ КОМПАНІЮ
                             </h2>
                         )}
+                        <br />
                     </div>
                     <div className={style.main__card}>
                         <img

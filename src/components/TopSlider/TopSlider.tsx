@@ -8,7 +8,7 @@ import sliderImages from './sliderImage';
 
 const len = sliderImages.length - 1;
 
-function Slider() {
+const TopSlider = () => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     useEffect(() => {
@@ -39,6 +39,6 @@ function Slider() {
             />
         </div>
     );
-}
+};
 
-export default Slider;
+export { TopSlider };
