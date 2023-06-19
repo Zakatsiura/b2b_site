@@ -1,3 +1,4 @@
+export * from './Contact/Contact';
 export * from './Header/Header';
 export * from './Footer/Footer';
 export * from './LanguageSwitcher/LanguageSwitcher';

@@ -1,5 +1,11 @@
-function ContactPage() {
-    return <div>Contact Page</div>;
-}
+import { Contact } from '../components/Contact/Contact';
+
+const ContactPage = () => {
+    return (
+        <div>
+            <Contact />
+        </div>
+    );
+};
 
 export { ContactPage };

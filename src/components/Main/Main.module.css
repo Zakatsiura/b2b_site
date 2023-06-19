@@ -14,29 +14,30 @@
 .main__top {
     display: flex;
     justify-content: center;
-    background-color: rgb(202, 241, 225);
+    background-color: rgb(220, 240, 248);
     padding: 5px;
 }
 
 .slogan {
     color: rgb(1, 1, 53);
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .upper__img {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     position: relative;
     right: 0;
     transform: translateX(100%);
     animation: moveCenter 1s forwards;
     width: 100%;
-    max-width: 800px;
+    max-width: 1400px;
 }
 
 @keyframes moveCenter {
