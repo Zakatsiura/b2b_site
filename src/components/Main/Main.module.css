@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+
 .main__wrapper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 10px;
     /* background-color: rgb(243, 241, 255); */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: rgb(1, 1, 53);
 }
 
 .main__top {
@@ -16,9 +22,11 @@
     color: rgb(1, 1, 53);
     font-size: 32px;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     letter-spacing: 1px;
 }
+
 .upper__img {
     display: flex;
     align-items: center;
@@ -63,10 +71,14 @@
 }
 
 .main__title {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     letter-spacing: 1px;
 }
+
 .main__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 20px;
     text-indent: 16px;
     text-align: left;
@@ -77,19 +89,24 @@
     .logo__block {
         flex-direction: column;
     }
+
     .main__title {
         text-align: center;
     }
+
     .logo {
         display: none;
     }
+
     .upper__img {
         display: flex;
         justify-content: center;
     }
+
     .main__card {
         flex-direction: column;
     }
+
     .main__picture {
         width: 85%;
     }

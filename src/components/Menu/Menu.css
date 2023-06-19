@@ -10,13 +10,15 @@
     background: #d5dde0;
     transform: translate(100%);
     transition: all 0.45s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .Menu.open {
     transform: translate(0);
 }
 
-.Menu > .btn-close {
+.Menu>.btn-close {
     font-size: 30px;
     position: absolute;
     left: 15px;
@@ -24,20 +26,20 @@
     cursor: pointer;
 }
 
-.Menu > .Menu-items {
+.Menu>.Menu-items {
     display: grid;
     place-items: center;
     grid-gap: 40px;
 }
 
-.Menu > .Menu-items > a {
+.Menu>.Menu-items>a {
     color: rgb(1, 1, 53);
     font-size: 32px;
     text-decoration: none;
     position: relative;
 }
 
-.Menu > .Menu-items > a::after {
+.Menu>.Menu-items>a::after {
     content: '';
     width: 100%;
     height: 2px;
@@ -49,31 +51,31 @@
     transition: all 0.45s;
 }
 
-.Menu > .Menu-items > a:hover::after {
+.Menu>.Menu-items>a:hover::after {
     transform: scaleX(1);
 }
 
-.Menu.open .Menu-items > a:nth-child(1) {
+.Menu.open .Menu-items>a:nth-child(1) {
     animation: animate ease-in-out;
     animation-duration: 0.7s;
 }
 
-.Menu.open .Menu-items > a:nth-child(2) {
+.Menu.open .Menu-items>a:nth-child(2) {
     animation: animate ease-in-out;
     animation-duration: 0.85s;
 }
 
-.Menu.open .Menu-items > a:nth-child(3) {
+.Menu.open .Menu-items>a:nth-child(3) {
     animation: animate ease-in-out;
     animation-duration: 1s;
 }
 
-.Menu.open .Menu-items > a:nth-child(4) {
+.Menu.open .Menu-items>a:nth-child(4) {
     animation: animate ease-in-out;
     animation-duration: 1.15s;
 }
 
-.Menu.open .Menu-items > a:nth-child(5) {
+.Menu.open .Menu-items>a:nth-child(5) {
     animation: animate ease-in-out;
     animation-duration: 1.3s;
 }
@@ -87,11 +89,13 @@
         opacity: 0;
         transform: translateY(90px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
     }
 }
+
 @media (max-width: 900px) {
     .Menu {
         width: 100%;
