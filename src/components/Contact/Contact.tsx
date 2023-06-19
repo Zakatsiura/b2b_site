@@ -15,9 +15,9 @@ const Contact = () => {
     return (
         <div className={style.contact__wrapper}>
             {language === 'en' ? (
-                <div className={style.contact__title}>Contact Information:</div>
+                <div className={style.contact__title}>CONTACT INFORMATION:</div>
             ) : (
-                <div className={style.contact__title}>Наші контакти:</div>
+                <div className={style.contact__title}>КОНТАКТНА ІНФОРМАЦІЯ:</div>
             )}
             {language === 'en' ? (
                 <p className={style.contact__text}>
@@ -69,9 +69,9 @@ const Contact = () => {
                 )}
             </div>
             {language === 'en' ? (
-                <div className={style.contact__title}>Our Location:</div>
+                <div className={style.contact__title}>OUR LOCATION:</div>
             ) : (
-                <div className={style.contact__title}>Наше розташування:</div>
+                <div className={style.contact__title}>НАШЕ РОЗТАШУВАННЯ:</div>
             )}
             {language === 'en' ? (
                 <p className={style.contact__text}>
