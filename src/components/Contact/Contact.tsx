@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 
 import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
+import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
 import style from './Contact.module.css';
 
 const Contact = () => {
@@ -14,10 +15,11 @@ const Contact = () => {
 
     return (
         <div className={style.contact__wrapper}>
+            <ScrollToTopButton />
             {language === 'en' ? (
                 <div className={style.contact__title}>CONTACT INFORMATION:</div>
             ) : (
-                <div className={style.contact__title}>КОНТАКТНА ІНФОРМАЦІЯ:</div>
+                <div className={style.contact__title}>ЗВ'ЯЗАТИСЯ З НАМИ:</div>
             )}
             {language === 'en' ? (
                 <p className={style.contact__text}>

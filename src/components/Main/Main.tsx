@@ -4,13 +4,13 @@ import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
 import { TopSlider } from '../TopSlider/TopSlider';
+import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
 import style from './Main.module.css';
 import logo from '../../assets/images/Logo_original_stroked.png';
 import h135 from '../../assets/images/H135.jpg';
 import h125to from '../../assets/images/h125takeoff.jpg';
 import h125 from '../../assets/images/H125.jpg';
 import flag from '../../assets/images/ukrainian-waving-flag-11.gif';
-import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
 
 const Main: React.FC = () => {
     const languageContext = useContext(LanguageContext);

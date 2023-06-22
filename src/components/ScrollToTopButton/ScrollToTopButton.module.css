@@ -8,3 +8,9 @@
     opacity: 40%;
     cursor: pointer;
 }
+
+@media (max-width: 900px) {
+    .top {
+        display: none;
+    }
+}
