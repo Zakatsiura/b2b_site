@@ -10,6 +10,7 @@ import h135 from '../../assets/images/H135.jpg';
 import h125to from '../../assets/images/h125takeoff.jpg';
 import h125 from '../../assets/images/H125.jpg';
 import flag from '../../assets/images/ukrainian-waving-flag-11.gif';
+import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
 
 const Main: React.FC = () => {
     const languageContext = useContext(LanguageContext);
@@ -23,6 +24,7 @@ const Main: React.FC = () => {
     return (
         <div>
             <TopSlider />
+            <ScrollToTopButton/>
             <div className={style.main__top}>
                 <div className={style.upper__img}>
                     <img src={logo} className={style.logo} alt="logo" />
