@@ -2,6 +2,7 @@ import { useContext } from 'react';
 
 import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
+import { locales } from '../../locales/locales';
 import style from './Contact.module.css';
 
 const Contact = () => {
@@ -16,76 +17,37 @@ const Contact = () => {
     return (
         <div className={style.contact__wrapper}>
             <ScrollToTopButton />
-            {language === 'en' ? (
-                <div className={style.contact__title}>CONTACT INFORMATION:</div>
-            ) : (
-                <div className={style.contact__title}>ЗВ'ЯЗАТИСЯ З НАМИ:</div>
-            )}
-            {language === 'en' ? (
-                <p className={style.contact__text}>
-                    Thank you for your interest in our company. We're here to
-                    assist you in any way we can. Please find our contact
-                    information below:
-                </p>
-            ) : (
-                <p className={style.contact__text}>
-                    Дякуємо за інтерес до нашої компанії. Будь ласка,
-                    скористайтесь інформацію нижче, щоб зв'язатись із нами:
-                </p>
-            )}
+            <div className={style.contact__title}>
+                {locales[language].contact__title}
+            </div>
+            <p className={style.contact__text}>
+                {locales[language].contact__p1}
+            </p>
             <div className={style.contact__text}>
-                {language === 'en' ? (
-                    <p className={style.contact__subtitle}>Address:</p>
-                ) : (
-                    <p className={style.contact__subtitle}>Наша адреса:</p>
-                )}
-                {language === 'en' ? (
-                    <p className={style.contact__text}>
-                        Simferopolska Str, 13а, Kyiv, 02096
-                    </p>
-                ) : (
-                    <p className={style.contact__text}>
-                        вул. Симферопольська, 13а, Київ, 02096
-                    </p>
-                )}
+                <p className={style.contact__subtitle}>
+                    {locales[language].contact__address}
+                </p>
+                <p className={style.contact__text}>
+                    {locales[language].contact__address__p1}
+                </p>
                 <p className={style.contact__subtitle}>Email </p>
                 <p className={style.contact__text}>
                     info@b2baviatrading.com.ua
                 </p>
-                {language === 'en' ? (
-                    <p className={style.contact__subtitle}>Phone:</p>
-                ) : (
-                    <p className={style.contact__subtitle}>Телефон:</p>
-                )}
+                <p className={style.contact__subtitle}>
+                    {locales[language].contact__phone}
+                </p>
                 <p className={style.contact__text}>+380 50 313 13 76</p>
-                {language === 'en' ? (
-                    <p className={style.contact__text}>
-                        We look forward to hearing from you and providing you
-                        with the assistance you need.
-                    </p>
-                ) : (
-                    <p className={style.contact__text}>
-                        Ми з нетерпінням чекаємо на Вас та надамо інформацію,
-                        яку Ви потребуєте.
-                    </p>
-                )}
+                <p className={style.contact__text}>
+                    {locales[language].contact__p2}
+                </p>
             </div>
-            {language === 'en' ? (
-                <div className={style.contact__title}>OUR LOCATION:</div>
-            ) : (
-                <div className={style.contact__title}>НАШЕ РОЗТАШУВАННЯ:</div>
-            )}
-            {language === 'en' ? (
-                <p className={style.contact__text}>
-                    Use the interactive map below to navigate your way here. We
-                    look forward to welcoming you!
-                </p>
-            ) : (
-                <p className={style.contact__text}>
-                    Скористайтеся інтерактивною картою нижче, щоб дістатися нас
-                    . Ми з нетерпінням чекаємо на Вас!
-                </p>
-            )}
+            <div className={style.contact__title}>
+                {locales[language].contact__location}
+            </div>
+            <p className={style.contact__text}>
+                {locales[language].contact__location__p1}
+            </p>
             <div className={style.contact__map_block}>
                 <iframe
                     className={style.contact__map}
