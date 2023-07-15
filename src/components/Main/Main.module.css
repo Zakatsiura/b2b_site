@@ -111,4 +111,8 @@
     .main__picture {
         width: 85%;
     }
+        .slogan {
+            font-size: 1.8rem;
+        }
+
 }

@@ -30,7 +30,7 @@ const Main: React.FC = () => {
                 <div className={style.upper__img}>
                     <img src={logo} className={style.logo} alt="logo" />
                     <h1 className={style.slogan}>{locales[language].slogan}</h1>
-                    <img src={flag} className={style.logo} alt="logo" />
+                    <img src={flag} className={style.logo} alt="flag" />
                 </div>
             </div>
             <div className={style.main__wrapper}>
