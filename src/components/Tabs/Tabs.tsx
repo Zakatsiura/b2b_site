@@ -1,6 +1,6 @@
 import { useState, useContext } from 'react';
 
-import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
+import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 import style from './Tabs.module.css';
 

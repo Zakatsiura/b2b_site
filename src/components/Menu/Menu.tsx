@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { items } from './MenuItems';
+import { useMenuItems } from './MenuItems';
 import './Menu.css';
 import cross from '../../assets/images/cross.png';
 
@@ -19,6 +19,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onChange }) => {
     const handleCloseMenu = () => {
         onChange(false);
     };
+
+    const items = useMenuItems();
 
     return (
         <div className={`Menu ${isOpen ? 'open' : ''}`}>

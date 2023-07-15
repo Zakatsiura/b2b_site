@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
+import { LanguageContext } from '../../context/languageContext';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
 import { TopSlider } from '../TopSlider/TopSlider';

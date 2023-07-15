@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import { LanguageProvider, LanguageSwitcher } from './components/LanguageSwitcher/LanguageSwitcher';
+import { LanguageProvider } from './components/LanguageSwitcher/LanguageSwitcher';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement

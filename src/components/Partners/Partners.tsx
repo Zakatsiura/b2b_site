@@ -4,7 +4,7 @@ import style from './Partners.module.css';
 import airbus from '../../assets/icons/airbus-logo.png';
 import safran from '../../assets/icons/safran-logo.png';
 import lnz from '../../assets/icons/lnz-logo.png';
-import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
+import { LanguageContext } from '../../context/languageContext';
 
 const Partners = () => {
     const languageContext = useContext(LanguageContext);

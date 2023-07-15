@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
+import { LanguageContext } from '../../context/languageContext';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
 import { locales } from '../../locales/locales';
 import style from './Contact.module.css';

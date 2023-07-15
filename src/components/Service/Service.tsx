@@ -1,8 +1,7 @@
 import { useContext } from 'react';
 
 import style from './Service.module.css';
-import { LanguageContext } from '../LanguageSwitcher/LanguageSwitcher';
-import { locales } from '../../locales/locales';
+import { LanguageContext } from '../../context/languageContext';import { locales } from '../../locales/locales';
 import { Tabs } from '../Tabs/Tabs';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
