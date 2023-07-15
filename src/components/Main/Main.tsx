@@ -77,9 +77,7 @@ const Main: React.FC = () => {
                         {locales[language].main__p5}
                     </p>
                     <hr />
-                    <br />
                     <MainSlider />
-                    <br />
                     <hr />
                 </div>
                 <Partners />

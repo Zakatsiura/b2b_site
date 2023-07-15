@@ -1,0 +1,61 @@
+.tabs__wrapper {
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: rgb(1, 1, 53);
+}
+
+.tabs__title {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 1rem;
+    padding: 0;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.tabs__title_item {
+    font-size: 2rem;
+    list-style-type: none;
+    width: 300px;
+    cursor: pointer;
+    margin: 0 auto;
+    border-bottom: 2px solid transparent;
+}
+
+.tabs__title_item_active {
+    font-size: 2rem;
+    list-style-type: none;
+    width: 300px;
+    cursor: pointer;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(1, 1, 53);
+}
+
+.tabs__title_item:hover {
+    color: rgb(29, 29, 236);
+}
+
+.tabs__content {}
+
+.tabs__card {
+    margin: 1rem auto;
+}
+
+.tabs__none {
+    display: none;
+}
+
+.tabs__card_text {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    text-indent: 1rem;
+}
+
+.tabs__card_item {
+    list-style-type: none;
+    font-size: 1rem;
+}

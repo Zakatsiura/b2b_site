@@ -13,5 +13,9 @@
     "contact__phone": "Phone:",
     "contact__p2": "We look forward to hearing from you and providing you with the assistance you need.",
     "contact__location": "OUR LOCATION:",
-    "contact__location__p1": "Use the interactive map below to navigate your way here. We look forward to welcoming you!"
+    "contact__location__p1": "Use the interactive map below to navigate your way here. We look forward to welcoming you!",
+    "service__title": "We provide next kind of maintenance",
+    "service__gallery": "GALLERY",
+    "tabs__title1": "ENGINE",
+    "tabs__title2": "AIRFRAME"
 }
