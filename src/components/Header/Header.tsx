@@ -17,7 +17,7 @@ const Header = () => {
         <div className={style.header}>
             <div className={style.logo__block}>
                 <Link to={'main'} className={style.header__link}>
-                    <img src={logo_small} className={style.logo__small} />
+                    <img src={logo_small} className={style.logo__small} alt='logo'/>
                     <div className={style.header__link_text}>
                         B2B Aviation Trading
                     </div>
@@ -26,7 +26,7 @@ const Header = () => {
             <div className={style.rightside}>
                 <LanguageSwitcher />
                 <div className={style.header__button} onClick={toggleMenu}>
-                    <img src={menu} className={style.burger} />
+                    <img src={menu} className={style.burger} alt='menu'/>
                 </div>
                 <Menu isOpen={isOpen} onChange={setIsOpen} />
             </div>
