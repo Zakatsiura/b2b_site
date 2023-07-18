@@ -9,7 +9,7 @@ const Footer = () => {
             <div className={style.footer__nav}>
                 <ul className={style.footer__nav_list}>
                     <li className={style.footer__nav_item}>
-                        <a href="/main">About</a>
+                        <a href="/">About</a>
                     </li>
                     <li className={style.footer__nav_item}>
                         <a href="/aircompany">Air Company</a>

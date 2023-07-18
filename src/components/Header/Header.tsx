@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <div className={style.header}>
             <div className={style.logo__block}>
-                <Link to={'main'} className={style.header__link}>
+                <Link to={'/'} className={style.header__link}>
                     <img src={logo_small} className={style.logo__small} alt='logo'/>
                     <div className={style.header__link_text}>
                         B2B Aviation Trading

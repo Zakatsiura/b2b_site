@@ -14,8 +14,7 @@ function App() {
     return (
         <Routes>
             <Route path={'/'} element={<MainLayout />}>
-                <Route index element={<Navigate to={'main'} />} />
-                <Route path={'main'} element={<MainPage />} />
+                <Route index element={<MainPage />} />{' '}
                 <Route path={'aircompany'} element={<AirCompanyPage />} />
                 <Route path={'service'} element={<ServicePage />} />
                 <Route path={'contact'} element={<ContactPage />} />

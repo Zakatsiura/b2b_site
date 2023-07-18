@@ -19,14 +19,14 @@ const useMenuItems = (): MenuItem[] => {
     const items: MenuItem[] =
         language === 'en'
             ? [
-                  { itemText: 'About', itemLink: '/main' },
+                  { itemText: 'About', itemLink: '/' },
                   { itemText: 'Air Company', itemLink: '/aircompany' },
                   { itemText: 'Service', itemLink: '/service' },
                   { itemText: 'Contacts', itemLink: '/contact' },
                   { itemText: 'Certificates', itemLink: '/certificates' },
               ]
             : [
-                  { itemText: 'Про нас', itemLink: '/main' },
+                  { itemText: 'Про нас', itemLink: '/' },
                   { itemText: 'Авіакомпанія', itemLink: '/aircompany' },
                   { itemText: 'Обслуговування', itemLink: '/service' },
                   { itemText: 'Контакти', itemLink: '/contact' },
