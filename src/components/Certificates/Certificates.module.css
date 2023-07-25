@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: rgb(1, 1, 53);
+    text-align: center;
+}
+
+.title {
+    margin: 2rem 0;
+}
+.imageRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imageContainer {
+    padding: 0.5rem;
+}
+
+.image {
+    max-width: 400px;
+    border: 1px solid black;
+}
+
+.enlargedImage {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .imageRow {
+        flex-direction: column;
+    }
+
+    .image {
+        max-width: 300px;
+    }
+}
