@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: rgb(1, 1, 53);
+    background-color: rgb(21, 75, 25);
     color: white;
     padding: 50px 0;
     bottom: 0;
@@ -35,7 +35,7 @@
 }
 
 .footer__nav_item:hover>a {
-    color: rgb(103, 103, 255);
+    color: rgb(102, 180, 92);
 }
 
 .footer__icon__block {
