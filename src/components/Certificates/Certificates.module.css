@@ -13,9 +13,11 @@
 .title {
     margin: 2rem 0;
 }
+
 .imageRow {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 3rem;
 }
 
 .imageContainer {
@@ -36,6 +38,7 @@
 @media (max-width: 900px) {
     .imageRow {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .image {

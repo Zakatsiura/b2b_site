@@ -45,7 +45,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image1}
-                        alt="Image 1"
+                        alt="MRO certificate"
                         className={styles.image}
                         onClick={() => openModal(image1)}
                     />
@@ -53,7 +53,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image2}
-                        alt="Image 2"
+                        alt="AOC certificate"
                         className={styles.image}
                         onClick={() => openModal(image2)}
                     />
@@ -63,7 +63,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image3}
-                        alt="Image 3"
+                        alt="MOAC certificate"
                         className={styles.image}
                         onClick={() => openModal(image3)}
                     />
@@ -71,7 +71,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image4}
-                        alt="Image 3"
+                        alt="MOAC_1 certificate"
                         className={styles.image}
                         onClick={() => openModal(image4)}
                     />
@@ -81,7 +81,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image5}
-                        alt="Image 3"
+                        alt="CAMO certificate"
                         className={styles.image}
                         onClick={() => openModal(image5)}
                     />
@@ -89,7 +89,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image6}
-                        alt="Image 3"
+                        alt="CAMO_1 certificate"
                         className={styles.image}
                         onClick={() => openModal(image6)}
                     />
@@ -99,7 +99,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image7}
-                        alt="Image 3"
+                        alt="DIST_en  certificate"
                         className={styles.image}
                         onClick={() => openModal(image7)}
                     />
@@ -107,7 +107,7 @@ const Certificates = () => {
                 <div className={styles.imageContainer}>
                     <img
                         src={image8}
-                        alt="Image 3"
+                        alt="DIST_ua certificate"
                         className={styles.image}
                         onClick={() => openModal(image8)}
                     />
