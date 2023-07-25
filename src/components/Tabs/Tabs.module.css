@@ -32,14 +32,14 @@
     width: 300px;
     cursor: pointer;
     margin: 0 auto;
-    border-bottom: 2px solid rgb(1, 1, 53);
+    border-bottom: 2px solid rgb(42, 107, 25);
 }
 
 .tabs__title_item:hover {
-    color: rgb(29, 29, 236);
+    color: rgb(42, 107, 25);
 }
 
-.tabs__content {}
+/* .tabs__content {} */
 
 .tabs__card {
     margin: 1rem auto;
