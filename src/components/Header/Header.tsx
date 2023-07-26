@@ -19,7 +19,7 @@ const Header = () => {
                 <Link to={'/'} className={style.header__link}>
                     <img src={logo_small} className={style.logo__small} alt='logo'/>
                     <div className={style.header__link_text}>
-                        B2B Aviation Trading
+                        B<span className={style.logo__color_digit}>2</span>B Aviation Trading
                     </div>
                 </Link>
             </div>

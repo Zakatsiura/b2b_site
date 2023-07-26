@@ -5,6 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: var(--primaryblack);
+    background-color: var(--lightwhite);
 }
 
 .contact__title {

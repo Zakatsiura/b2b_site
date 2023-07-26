@@ -1,8 +1,10 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-VariableFont_wght.ttf');
+}
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -17,6 +19,11 @@ code {
     --primarygreen: rgb(20, 70, 24);
     --secondarygreen: rgb(102, 180, 92);
     --lightgreen: rgb(220, 248, 228);
+    --gradiengreen1: rgb(30, 90, 44);
+    --gradiengreen2: rgb(50, 110, 64);
+    --gradiengreen3: rgb(106, 143, 114);
     --primarywhite: rgb(255, 252, 252);
+    --lightwhite: rgb(243, 241, 255);
     --primaryblack: rgb(1, 1, 53);
+    --secondaryblack: rgb(0, 0, 0);
 }

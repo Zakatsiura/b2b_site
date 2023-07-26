@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: var(--primarygreen);
+    background-image: linear-gradient(to left, var(--primarygreen), var(--gradiengreen1), var(--gradiengreen2), var(--gradiengreen3));
 }
 
 .logo__block {
@@ -17,14 +17,23 @@
     display: flex;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header__link_text {
-    font-size: 32px;
+    font-size: 38px;
     letter-spacing: 1px;
-    color: var(--primarywhite);
+    color: var(--secondaryblack);
     text-decoration: none;
+}
+
+.logo__color_digit {
+    color: var(--primarygreen)
+}
+
+.header__link_text:hover {
+    color: var(--lightgreen);
+
 }
 
 .burger {
@@ -36,8 +45,8 @@
 .logo__small {
     width: 50px;
     margin: 0 36px;
-    padding: 2px;
-    background-color: var(--primarywhite);
+    padding: 1px;
+    background-color: var(--lightgreen);
     border-radius: 5px;
 }
 

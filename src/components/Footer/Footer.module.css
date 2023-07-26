@@ -3,6 +3,7 @@
     background-color: var(--primarygreen);
     color: var(--primarywhite);
     padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
     bottom: 0;
     z-index: 10;
 }
