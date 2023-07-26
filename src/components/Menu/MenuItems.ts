@@ -1,11 +1,7 @@
 import { useContext } from 'react';
 
 import { LanguageContext } from '../../context/languageContext';
-
-interface MenuItem {
-    itemText: string;
-    itemLink: string;
-}
+import MenuItem from '../../interfaces/interfaces'
 
 const useMenuItems = (): MenuItem[] => {
     const languageContext = useContext(LanguageContext);

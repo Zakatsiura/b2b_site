@@ -11,7 +11,7 @@ import { MainLayout } from './layouts/MainLayout';
 
 function App() {
     return (
-        <Routes>
+        <Routes >
             <Route path={'/'} element={<MainLayout />}>
                 <Route index element={<MainPage />} />
                 <Route path={'aircompany'} element={<AirCompanyPage />} />

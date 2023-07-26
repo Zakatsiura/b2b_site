@@ -1,28 +1,33 @@
+import { Link } from 'react-router-dom';
+
 import style from './Footer.module.css';
+import { useMenuItems } from '../Menu/MenuItems';
+import MenuItem from '../../interfaces/interfaces';
 import facebook from '../../assets/icons/facebook-icon.png';
 import linkedin from '../../assets/icons/linkedin-icon.png';
 import instagram from '../../assets/icons/instagram-icon.png';
 
 const Footer = () => {
+    const items = useMenuItems();
+
+         const scrollToTop = () => {
+             window.scrollTo({ top: 0, behavior: 'auto' });
+         };
+
     return (
-        <div className={style.footer}>
+        <section className={style.footer}>
             <div className={style.footer__nav}>
                 <ul className={style.footer__nav_list}>
-                    <li className={style.footer__nav_item}>
-                        <a href="/">About</a>
-                    </li>
-                    <li className={style.footer__nav_item}>
-                        <a href="/aircompany">Air Company</a>
-                    </li>
-                    <li className={style.footer__nav_item}>
-                        <a href="/service">Service</a>
-                    </li>
-                    <li className={style.footer__nav_item}>
-                        <a href="/contact">Contacts</a>
-                    </li>
-                    <li className={style.footer__nav_item}>
-                        <a href="/certificates">Certificates</a>
-                    </li>
+                    {items.map((item: MenuItem, index: number) => (
+                        <Link
+                            to={item.itemLink}
+                            key={index}
+                            className={style.footer__nav_itemlink}
+                            onClick={scrollToTop}
+                        >
+                            {item.itemText}
+                        </Link>
+                    ))}
                 </ul>
             </div>
             <div className={style.footer__divider}></div>
@@ -54,7 +59,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
