@@ -18,5 +18,6 @@
     "service__gallery": "GALLERY",
     "tabs__title1": "ENGINE",
     "tabs__title2": "AIRFRAME",
-    "certificates__titile": "Certificates"
+    "certificates__titile": "Certificates",
+    "header__switch": "Switch to:"
 }

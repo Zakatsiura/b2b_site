@@ -18,5 +18,6 @@
     "service__gallery": "ГАЛЕРЕЯ",
     "tabs__title1": "ДВИГУН",
     "tabs__title2": "ВЕРТОЛІТ",
-    "certificates__titile": "Сертифікати"
+    "certificates__titile": "Сертифікати",
+    "header__switch": "Читати на:"
 }

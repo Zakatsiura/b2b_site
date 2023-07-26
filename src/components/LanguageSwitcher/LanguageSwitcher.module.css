@@ -1,12 +1,11 @@
 .language__button {
-    width: 52px;
-    height: 32px;
-    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
     color: var(--primaryblack);
     font-size: 1rem;
     font-weight: bold;
-    text-align: center;
-    background-color: var(--primarywhite);
+    background-color: var(--lightgreen);
     border: none;
     padding: 0;
     cursor: pointer;
