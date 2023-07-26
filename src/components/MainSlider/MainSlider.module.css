@@ -10,7 +10,7 @@
 .slider__slide {
     width: 100%;
     flex-shrink: 0;
-    opacity: 0;
+    opacity: 0.7;
     transition: opacity 0.5s linear;
 }
 
