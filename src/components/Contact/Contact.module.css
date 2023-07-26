@@ -4,7 +4,7 @@
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: rgb(1, 1, 53);
+    color: var(--primaryblack);
 }
 
 .contact__title {
@@ -38,7 +38,7 @@
 .contact__map {
     width: 600px;
     height: 450px;
-    border: 1px solid rgb(1, 1, 53);
+    border: 1px solid var(--primaryblack);
 }
 
 @media (max-width: 900px) {

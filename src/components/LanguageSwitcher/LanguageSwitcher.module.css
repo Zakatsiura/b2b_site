@@ -2,11 +2,11 @@
     width: 52px;
     height: 32px;
     border-radius: 5px;
-    color: rgb(1, 1, 53);
+    color: var(--primaryblack);
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    background-color: snow;
+    background-color: var(--primarywhite);
     border: none;
     padding: 0;
     cursor: pointer;

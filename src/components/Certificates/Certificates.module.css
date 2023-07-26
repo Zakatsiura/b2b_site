@@ -8,7 +8,7 @@
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: rgb(1, 1, 53);
+    color: var(--primaryblack);
     text-align: center;
 
 }
@@ -34,7 +34,7 @@
 
 .image {
     max-width: 400px;
-    border: 1px solid black;
+    border: 1px solid var(--primaryblack);
 }
 
 .enlargedImage {

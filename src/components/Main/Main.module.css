@@ -8,18 +8,18 @@
     /* background-color: rgb(243, 241, 255); */
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: rgb(1, 1, 53);
+    color: var(--primaryblack);;
 }
 
 .main__top {
     display: flex;
     justify-content: center;
-    background-color: rgb(220, 248, 228);
+    background-color: var(--lightgreen);
     padding: 5px;
 }
 
 .slogan {
-    color: rgb(1, 1, 53);
+    color: var(--primaryblack);
     font-size: 36px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;

@@ -3,7 +3,7 @@
     margin: 1rem auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: rgb(1, 1, 53);
+    color: var(--primaryblack);
 }
 
 .service__title {

@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
-    background-color: rgb(21, 75, 25);
-    color: white;
+    background-color: var(--primarygreen);
+    color: var(--primarywhite);
     padding: 50px 0;
     bottom: 0;
     z-index: 10;
@@ -35,7 +35,7 @@
 }
 
 .footer__nav_item:hover>a {
-    color: rgb(102, 180, 92);
+    color: var(--secondarygreen);
 }
 
 .footer__icon__block {
@@ -50,7 +50,7 @@
 
 .footer__divider {
     height: 2px;
-    background-color: snow;
+    background-color: var(--primarywhite);
     margin: 0 auto;
     max-width: 80vw;
 }

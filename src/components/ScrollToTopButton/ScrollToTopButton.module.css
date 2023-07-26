@@ -1,10 +1,9 @@
 .top {
     position: fixed;
-    width: 70px;
+    width: 50px;
     padding: 5px;
     right: 70px;
     bottom: 70px;
-    background-color: rgb(255, 255, 255);
     opacity: 40%;
     cursor: pointer;
 }

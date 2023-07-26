@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import {
     MainPage,
@@ -8,13 +8,12 @@ import {
     CertificatesPage,
 } from './pages';
 import { MainLayout } from './layouts/MainLayout';
-import './App.css';
 
 function App() {
     return (
         <Routes>
             <Route path={'/'} element={<MainLayout />}>
-                <Route index element={<MainPage />} />{' '}
+                <Route index element={<MainPage />} />
                 <Route path={'aircompany'} element={<AirCompanyPage />} />
                 <Route path={'service'} element={<ServicePage />} />
                 <Route path={'contact'} element={<ContactPage />} />

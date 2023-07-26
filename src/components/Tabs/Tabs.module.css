@@ -3,8 +3,7 @@
     padding: 1rem;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    color: rgb(1, 1, 53);
+    color: var(--primaryblack);
 }
 
 .tabs__title {
@@ -19,6 +18,7 @@
 
 .tabs__title_item {
     font-size: 2rem;
+    font-weight: 500;
     list-style-type: none;
     width: 300px;
     cursor: pointer;
@@ -28,15 +28,16 @@
 
 .tabs__title_item_active {
     font-size: 2rem;
+    font-weight: 500;
     list-style-type: none;
     width: 300px;
     cursor: pointer;
     margin: 0 auto;
-    border-bottom: 2px solid rgb(42, 107, 25);
+    border-bottom: 2px solid var(--primaryblack);
 }
 
 .tabs__title_item:hover {
-    color: rgb(42, 107, 25);
+    color: var(--secondarygreen);
 }
 
 /* .tabs__content {} */
