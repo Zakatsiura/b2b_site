@@ -21,9 +21,11 @@
 
 .header__lint_text_cap {
     font-size: 48px;
+    letter-spacing: 0;
 }
+
 .header__link_text {
-    font-size: 38px;
+    font-size: 32px;
     letter-spacing: 1px;
     color: var(--secondaryblack);
     text-decoration: none;
@@ -34,8 +36,7 @@
 }
 
 .header__link_text:hover {
-    color: var(--lightgreen);
-
+    color: var(--secondarygreen);
 }
 
 .burger {

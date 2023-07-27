@@ -35,7 +35,7 @@ const Header = () => {
                         <span className={style.header__lint_text_cap}>
                             B<span className={style.logo__color_digit}>2</span>B
                         </span>{' '}
-                        Aviation Trading
+                        AVIATION TRADING
                     </div>
                 </Link>
             </div>
