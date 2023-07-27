@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
 import { LanguageContext } from '../../context/languageContext';
-import { MainSlider } from '../MainSlider/MainSlider';
+// import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
 import { TopSlider } from '../TopSlider/TopSlider';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
@@ -58,7 +58,7 @@ const Main: React.FC = () => {
                     <img
                         src={h135}
                         className={style.main__picture}
-                        alt="h135 image"
+                        alt="h135 img"
                     />
                     <p className={style.main__text}>
                         {locales[language].main__p3}
@@ -70,15 +70,15 @@ const Main: React.FC = () => {
                         <img
                             src={h125}
                             className={style.main__picture}
-                            alt="h125 image"
+                            alt="h125 img"
                         />
                     </div>
                     <p className={style.main__text}>
                         {locales[language].main__p5}
                     </p>
-                    <hr />
+                    {/* <hr />
                     <MainSlider />
-                    <hr />
+                    <hr /> */}
                 </div>
                 <Partners />
             </div>
