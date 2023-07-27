@@ -51,8 +51,11 @@ const Tabs = () => {
                 >
                     <p className={style.tabs__card_text}>
                         Engine, ipsum dolor sit amet consectetur adipisicing
-                        elit. Nesciunt enim accusantium harum aut, distinctio in
-                        id officiis ut impedit nulla?
+                        elit. Consectetur magnam id hic harum eum. Corporis nam
+                        tempora impedit aspernatur a enim corrupti nobis
+                        ratione, sunt maxime omnis officia blanditiis quibusdam
+                        alias. Impedit hic molestiae sunt eos, ut eveniet ipsum
+                        labore eaque fugiat iusto ad nam?
                     </p>
                     <ul>
                         <li className={style.tabs__card_item}>efrb</li>
@@ -78,10 +81,13 @@ const Tabs = () => {
                         labore eaque fugiat iusto ad nam?
                     </p>
                     <ul>
-                        <li className={style.tabs__card_item}>ewfr</li>
-                        <li className={style.tabs__card_item}>dfgbdfb</li>
-                        <li className={style.tabs__card_item}>sdvsdv</li>
-                        <li className={style.tabs__card_item}>fdgbdgbn</li>
+                        <li className={style.tabs__card_item}>wwwwwwwwwwwwwwwwwwwwwwwww</li>
+                        <li className={style.tabs__card_item}>eeeeeeeeeeeeeeeeeeeeeeeeee</li>
+                        <li className={style.tabs__card_item}>qqqqqqqqqqqqqqqqqqqqq</li>
+                        <li className={style.tabs__card_item}>pppppppppppppi pppppppppppppppppp</li>
+                        <li className={style.tabs__card_item}>xvc xvc </li>
+                        <li className={style.tabs__card_item}>wqefed</li>
+                        <li className={style.tabs__card_item}>tryjtryjrty</li>
                     </ul>
                 </div>
             </div>
