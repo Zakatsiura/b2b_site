@@ -1,10 +1,9 @@
 .top {
     position: fixed;
-    width: 50px;
-    padding: 5px;
+    width: 40px;
     right: 70px;
     bottom: 70px;
-    opacity: 40%;
+    opacity: 0.5;
     cursor: pointer;
 }
 
