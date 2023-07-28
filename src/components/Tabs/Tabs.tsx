@@ -81,10 +81,10 @@ const Tabs = () => {
                         labore eaque fugiat iusto ad nam?
                     </p>
                     <ul>
-                        <li className={style.tabs__card_item}>wwwwwwwwwwwwwwwwwwwwwwwww</li>
-                        <li className={style.tabs__card_item}>eeeeeeeeeeeeeeeeeeeeeeeeee</li>
-                        <li className={style.tabs__card_item}>qqqqqqqqqqqqqqqqqqqqq</li>
-                        <li className={style.tabs__card_item}>pppppppppppppi pppppppppppppppppp</li>
+                        <li className={style.tabs__card_item}>wwwwwwww wwwwwwwwwwww</li>
+                        <li className={style.tabs__card_item}>eeeeeee eeeeeeeeeeee</li>
+                        <li className={style.tabs__card_item}>qqqqqqq qqqqqqqqqq</li>
+                        <li className={style.tabs__card_item}>pppppppppppppi pppppp ppppppppppp</li>
                         <li className={style.tabs__card_item}>xvc xvc </li>
                         <li className={style.tabs__card_item}>wqefed</li>
                         <li className={style.tabs__card_item}>tryjtryjrty</li>

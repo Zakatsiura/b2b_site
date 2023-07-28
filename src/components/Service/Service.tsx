@@ -5,6 +5,7 @@ import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 import { Tabs } from '../Tabs/Tabs';
 import { MainSlider } from '../MainSlider/MainSlider';
+import { Card } from '../Card/Card';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
 
 const Service = () => {
@@ -20,6 +21,7 @@ const Service = () => {
             <div className={style.service__title}>
                 {locales[language].service__title}
             </div>
+            <Card />
             <Tabs />
             <div className={style.service__title}>
                 {locales[language].service__gallery}
