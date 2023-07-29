@@ -1,9 +1,12 @@
 .tabs__wrapper {
-    margin: 0 auto 2rem;
+    max-width: 1400px;
     padding: 1rem;
+    margin: 0 auto;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     color: var(--primaryblack);
+    font-weight: 300;
+    background-color: var(--lightwhite);
 }
 
 .tabs__title {
