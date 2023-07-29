@@ -5,7 +5,7 @@
     overflow: hidden;
     border: 2px solid var(--primarygreen);
     box-sizing: border-box;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
 
 .slider__slide {
