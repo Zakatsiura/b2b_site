@@ -10,6 +10,7 @@ import slide6 from '../../assets/images/slide6.jpg';
 import slide7 from '../../assets/images/slide3.jpg';
 import slide8 from '../../assets/images/slide8.jpg';
 import slide9 from '../../assets/images/slide2.jpg';
+import slide10 from '../../assets/images/slide10.jpg';
 
 const images = [
     slide1,
@@ -21,6 +22,7 @@ const images = [
     slide7,
     slide8,
     slide9,
+    slide10,
 ];
 
 const MainSlider = () => {
@@ -55,5 +57,3 @@ const MainSlider = () => {
 };
 
 export { MainSlider };
-
-
