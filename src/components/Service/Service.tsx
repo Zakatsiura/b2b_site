@@ -22,7 +22,7 @@ const Service = () => {
                 {locales[language].service__title}
             </div>
             <Card />
-            <Tabs />
+            {/* <Tabs /> */}
             <div className={style.service__title}>
                 {locales[language].service__gallery}
             </div>

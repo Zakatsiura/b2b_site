@@ -1,5 +1,12 @@
-function Part145Page() {
-    return <div> Part 145 Page </div>;
+import { ScrollToTopButton, Tabs } from '../components';
+
+const Part145Page = () => {
+    return (
+        <div>
+            <Tabs />
+            <ScrollToTopButton/>
+        </div>
+    );
 }
 
 export { Part145Page };
