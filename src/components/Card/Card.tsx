@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import styles from './Card.module.css';
 import camo from '../../assets/images/tech.jpg';
 import part145 from '../../assets/images/maint_area.jpg';
-import pads from '../../assets/images/ukit_pads.jpg';
+import techs from '../../assets/images/techs.jpg'
 
 const data = [
     {
@@ -23,7 +23,7 @@ const data = [
         title: 'PART-M',
         body: 'rules for the organization and procedures involved in the maintenance of AC to ensure they remain in an airworthy condition throughout their operational life',
         path: '/service/part-m',
-        image: pads,
+        image: techs,
     },
 ];
 
