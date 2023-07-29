@@ -2,7 +2,9 @@ import { useState, useContext } from 'react';
 
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
-import style from './Tabs.module.css';
+import styles from './Tabs.module.css';
+import scheme from '../../assets/images/helicopterphoto.png';
+
 
 const Tabs = () => {
     const [toggle, setToggle] = useState(1);
@@ -20,13 +22,14 @@ const Tabs = () => {
     const { language } = languageContext;
 
     return (
-        <div className={style.tabs__wrapper}>
-            <ul className={style.tabs__title}>
+        <div className={styles.tabs__wrapper}>
+            <img className={styles.pic} src={scheme} />
+            <ul className={styles.tabs__title}>
                 <li
                     className={
                         toggle === 1
-                            ? style.tabs__title_item_active
-                            : style.tabs__title_item
+                            ? styles.tabs__title_item_active
+                            : styles.tabs__title_item
                     }
                     onClick={() => updateToggle(1)}
                 >
@@ -35,21 +38,21 @@ const Tabs = () => {
                 <li
                     className={
                         toggle === 2
-                            ? style.tabs__title_item_active
-                            : style.tabs__title_item
+                            ? styles.tabs__title_item_active
+                            : styles.tabs__title_item
                     }
                     onClick={() => updateToggle(2)}
                 >
                     {locales[language].tabs__title2}
                 </li>
             </ul>
-            <div className={style.tabs__content}>
+            <div className={styles.tabs__content}>
                 <div
                     className={
-                        toggle === 1 ? style.tabs__card : style.tabs__none
+                        toggle === 1 ? styles.tabs__card : styles.tabs__none
                     }
                 >
-                    <p className={style.tabs__card_text}>
+                    <p className={styles.tabs__card_text}>
                         Engine, ipsum dolor sit amet consectetur adipisicing
                         elit. Consectetur magnam id hic harum eum. Corporis nam
                         tempora impedit aspernatur a enim corrupti nobis
@@ -58,21 +61,21 @@ const Tabs = () => {
                         labore eaque fugiat iusto ad nam?
                     </p>
                     <ul>
-                        <li className={style.tabs__card_item}>efrb</li>
-                        <li className={style.tabs__card_item}>dffffff</li>
-                        <li className={style.tabs__card_item}>fdbdfbdfb</li>
-                        <li className={style.tabs__card_item}>fdbdbfdbdfb</li>
-                        <li className={style.tabs__card_item}>xvc xvc </li>
-                        <li className={style.tabs__card_item}>wqefed</li>
-                        <li className={style.tabs__card_item}>tryjtryjrty</li>
+                        <li className={styles.tabs__card_item}>efrb</li>
+                        <li className={styles.tabs__card_item}>dffffff</li>
+                        <li className={styles.tabs__card_item}>fdbdfbdfb</li>
+                        <li className={styles.tabs__card_item}>fdbdbfdbdfb</li>
+                        <li className={styles.tabs__card_item}>xvc xvc </li>
+                        <li className={styles.tabs__card_item}>wqefed</li>
+                        <li className={styles.tabs__card_item}>tryjtryjrty</li>
                     </ul>
                 </div>
                 <div
                     className={
-                        toggle === 2 ? style.tabs__card : style.tabs__none
+                        toggle === 2 ? styles.tabs__card : styles.tabs__none
                     }
                 >
-                    <p className={style.tabs__card_text}>
+                    <p className={styles.tabs__card_text}>
                         Aircraft ipsum dolor sit amet consectetur adipisicing
                         elit. Consectetur magnam id hic harum eum. Corporis nam
                         tempora impedit aspernatur a enim corrupti nobis
@@ -81,13 +84,13 @@ const Tabs = () => {
                         labore eaque fugiat iusto ad nam?
                     </p>
                     <ul>
-                        <li className={style.tabs__card_item}>wwwwwwww wwwwwwwwwwww</li>
-                        <li className={style.tabs__card_item}>eeeeeee eeeeeeeeeeee</li>
-                        <li className={style.tabs__card_item}>qqqqqqq qqqqqqqqqq</li>
-                        <li className={style.tabs__card_item}>pppppppppppppi pppppp ppppppppppp</li>
-                        <li className={style.tabs__card_item}>xvc xvc </li>
-                        <li className={style.tabs__card_item}>wqefed</li>
-                        <li className={style.tabs__card_item}>tryjtryjrty</li>
+                        <li className={styles.tabs__card_item}>wwwwwwww wwwwwwwwwwww</li>
+                        <li className={styles.tabs__card_item}>eeeeeee eeeeeeeeeeee</li>
+                        <li className={styles.tabs__card_item}>qqqqqqq qqqqqqqqqq</li>
+                        <li className={styles.tabs__card_item}>pppppppppppppi pppppp ppppppppppp</li>
+                        <li className={styles.tabs__card_item}>xvc xvc </li>
+                        <li className={styles.tabs__card_item}>wqefed</li>
+                        <li className={styles.tabs__card_item}>tryjtryjrty</li>
                     </ul>
                 </div>
             </div>

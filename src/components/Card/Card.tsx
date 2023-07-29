@@ -28,6 +28,9 @@ const data = [
 ];
 
 const Card = () => {
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+    };
     return (
         <section>
             <div className={styles.wrapper}>
@@ -41,7 +44,10 @@ const Card = () => {
                             <h2 className={styles.card__title}>{item.title}</h2>
                             <p className={styles.card__body}>{item.body}</p>
                             <Link to={item.path}>
-                                <button className={styles.btn}>
+                                <button
+                                    className={styles.btn}
+                                    onClick={scrollToTop}
+                                >
                                     Learn more
                                 </button>
                             </Link>

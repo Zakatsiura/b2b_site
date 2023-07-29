@@ -9,6 +9,12 @@
     background-color: var(--lightwhite);
 }
 
+.pic {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+
 .tabs__title {
     display: flex;
     justify-content: space-evenly;
@@ -62,4 +68,11 @@
 .tabs__card_item {
     list-style-type: none;
     font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+    .pic {
+            width: 95%;
+            margin: 0 auto;
+        }
 }
