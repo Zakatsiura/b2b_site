@@ -1,0 +1,85 @@
+.fleet {
+    max-width: 1400px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primaryblack);
+    background-color: var(--lightwhite);
+}
+
+.wrapper {
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+}
+
+/* .header {} */
+
+.title {
+    text-align: center;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    max-width:100%;
+    width: 100%;
+    color: var(--primarywhite);
+    background-color: var(--gradiengreen1);
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+}
+
+.card__img {
+    /* background-image: url('../../assets/images/H125.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card__body,
+.card__title {
+    padding: 1.5rem;
+}
+
+
+.card__content {
+    min-height: 300px;
+    height: max-content;
+    width: 100%;
+}
+
+.text {
+    padding: 1rem 0;
+    text-indent: 1rem;
+}
+
+/* .main__text {} */
+
+@media (max-width: 900px) {
+    .main__row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        max-width: 95%;
+    }
+}

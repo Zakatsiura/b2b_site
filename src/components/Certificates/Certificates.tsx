@@ -7,6 +7,8 @@ import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
 import { locales } from '../../locales/locales';
 
 import MRO_Airbus from '../../assets/certificates/MRO_Airbus.png';
+import MRO_1 from '../../assets/certificates/MRO_1.png';
+import MRO_2 from '../../assets/certificates/MRO_2.png';
 import AOC from '../../assets/certificates/AOC.png';
 import MOAC from '../../assets/certificates/MOAC.png';
 import MOAC_1 from '../../assets/certificates/MOAC_1.png';
@@ -17,6 +19,8 @@ import DIST_ua from '../../assets/certificates/DIST_ua.png';
 
 const imagePaths = [
     MRO_Airbus,
+    MRO_1,
+    MRO_2,
     AOC,
     MOAC,
     MOAC_1,

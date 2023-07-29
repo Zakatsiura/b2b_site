@@ -22,7 +22,7 @@
 
 .card__content {
     padding: 1.5rem;
-    background: var(--primaryblack);
+    background: var(--gradiengreen1);
     transform: translateY(-30%);
     transition: transform 500ms ease;
 }
