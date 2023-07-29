@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 
 import { LanguageContext } from '../../context/languageContext';
-// import { MainSlider } from '../MainSlider/MainSlider';
 import { Partners } from '../Partners/Partners';
 import { TopSlider } from '../TopSlider/TopSlider';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
@@ -76,9 +75,6 @@ const Main: React.FC = () => {
                     <p className={style.main__text}>
                         {locales[language].main__p5}
                     </p>
-                    {/* <hr />
-                    <MainSlider />
-                    <hr /> */}
                 </div>
                 <Partners />
             </div>

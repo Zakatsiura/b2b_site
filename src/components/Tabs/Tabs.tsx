@@ -5,7 +5,6 @@ import { locales } from '../../locales/locales';
 import styles from './Tabs.module.css';
 import scheme from '../../assets/images/helicopterphoto.png';
 
-
 const Tabs = () => {
     const [toggle, setToggle] = useState(1);
 
@@ -23,7 +22,7 @@ const Tabs = () => {
 
     return (
         <div className={styles.tabs__wrapper}>
-            <img className={styles.pic} src={scheme} />
+            <img className={styles.pic} src={scheme} alt={'Helicopter'} />
             <ul className={styles.tabs__title}>
                 <li
                     className={
@@ -84,10 +83,18 @@ const Tabs = () => {
                         labore eaque fugiat iusto ad nam?
                     </p>
                     <ul>
-                        <li className={styles.tabs__card_item}>wwwwwwww wwwwwwwwwwww</li>
-                        <li className={styles.tabs__card_item}>eeeeeee eeeeeeeeeeee</li>
-                        <li className={styles.tabs__card_item}>qqqqqqq qqqqqqqqqq</li>
-                        <li className={styles.tabs__card_item}>pppppppppppppi pppppp ppppppppppp</li>
+                        <li className={styles.tabs__card_item}>
+                            wwwwwwww wwwwwwwwwwww
+                        </li>
+                        <li className={styles.tabs__card_item}>
+                            eeeeeee eeeeeeeeeeee
+                        </li>
+                        <li className={styles.tabs__card_item}>
+                            qqqqqqq qqqqqqqqqq
+                        </li>
+                        <li className={styles.tabs__card_item}>
+                            pppppppppppppi pppppp ppppppppppp
+                        </li>
                         <li className={styles.tabs__card_item}>xvc xvc </li>
                         <li className={styles.tabs__card_item}>wqefed</li>
                         <li className={styles.tabs__card_item}>tryjtryjrty</li>

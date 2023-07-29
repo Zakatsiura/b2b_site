@@ -5,7 +5,8 @@
     background-color: var(--lightwhite);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    color: var(--primaryblack);;
+    color: var(--primaryblack);
+    ;
 }
 
 .main__top {
@@ -52,6 +53,7 @@
 
 .main__card {
     display: flex;
+    align-items: center;
 }
 
 .logo__block {
@@ -107,10 +109,12 @@
     }
 
     .main__picture {
+
         width: 85%;
     }
-        .slogan {
-            font-size: 1.8rem;
-        }
+
+    .slogan {
+        font-size: 1.8rem;
+    }
 
 }
