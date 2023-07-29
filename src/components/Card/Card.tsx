@@ -10,19 +10,19 @@ const data = [
     {
         title: 'CAMO',
         body: 'play a crucial role in ensuring that aircraft remain safe, reliable, and in compliance with aviation regulations throughout their operational lifespan',
-        path: '/camo',
+        path: '/service/camo',
         image: camo,
     },
     {
         title: 'PART-145',
         body: 'ensures that maintenance tasks are performed by qualified personnel using approved procedures and facilities, ultimately contributing to the overall safety',
-        path: '/part-145',
+        path: '/service/part-145',
         image: part145,
     },
     {
         title: 'PART-M',
         body: 'rules for the organization and procedures involved in the maintenance of AC to ensure they remain in an airworthy condition throughout their operational life',
-        path: '/part-m',
+        path: '/service/part-m',
         image: pads,
     },
 ];
