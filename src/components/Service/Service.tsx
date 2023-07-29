@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import style from './Service.module.css';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
-import { Tabs } from '../Tabs/Tabs';
+// import { Tabs } from '../Tabs/Tabs';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { Card } from '../Card/Card';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';

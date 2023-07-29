@@ -1,19 +1,20 @@
 .slider__wrapper {
     max-width: 70%;
     display: flex;
-    max-height: 700px;
     margin: 2rem auto;
     overflow: hidden;
+    border: 2px solid var(--primarygreen);
+    box-sizing: border-box;
+    border-radius: 1rem;
 }
 
 .slider__slide {
     width: 100%;
     flex-shrink: 0;
-    opacity: 0.7;
-    border-radius: 1rem;
-    transition: opacity 0.5s linear;
 }
 
-.slider__slide.active {
-    opacity: 1;
+@media (max-width: 900px) {
+    .slider__wrapper {
+        max-width: 80%;
+    }
 }
