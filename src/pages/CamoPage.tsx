@@ -1,12 +1,14 @@
-import { ScrollToTopButton, Video } from "../components";
-import Camo from "../components/Camo/Camo";
+import { ScrollToTopButton, Video } from '../components';
+import { Camo } from '../components/Camo/Camo';
 
 const CamoPage = () => {
-    return <div>
-        <Camo/>
-        <Video/>
-        <ScrollToTopButton />
-    </div>;
-}
+    return (
+        <div>
+            <Camo />
+            <Video />
+            <ScrollToTopButton />
+        </div>
+    );
+};
 
 export { CamoPage };

@@ -71,4 +71,4 @@ const Camo = () => {
     );
 };
 
-export default Camo;
+export { Camo };
