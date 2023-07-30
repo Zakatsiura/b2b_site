@@ -82,6 +82,7 @@
     text-indent: 16px;
     text-align: left;
     padding: 15px;
+    letter-spacing: 1px;
 }
 
 @media (max-width: 900px) {
