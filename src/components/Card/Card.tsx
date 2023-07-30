@@ -7,21 +7,6 @@ import styles from './Card.module.css';
 import camo from '../../assets/images/tech.jpg';
 import techs from '../../assets/images/techs.jpg'
 
-// const data = [
-//     {
-//         title: 'PART-M',
-//         body: 'Continuing Airworthiness Management Organisation (CAMO)',
-//         path: '/service/camo',
-//         image: camo,
-//     },
-//     {
-//         title: 'PART-145',
-//         body: 'Maintenance Repair Organisation (MRO)',
-//         path: '/service/mro',
-//         image: techs,
-//     },
-// ];
-
 const Card = () => {
 
 const languageContext = useContext(LanguageContext);
