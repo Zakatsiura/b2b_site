@@ -49,10 +49,10 @@ const Contact = () => {
                 {locales[language].contact__location__p1}
             </p>
             <div className={style.contact__map_block}>
-                <iframe
+                <iframe title='map'
                     className={style.contact__map}
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.8351491125873!2d30.646794176875503!3d50.42554298915645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5184ae15555%3A0x69fd9a9c7090060d!2z0YPQuy4g0KHQuNC80YTQtdGA0L7Qv9C-0LvRjNGB0LrQsNGPLCAxM9CwLCDQmtC40LXQsiwgMDIwOTY!5e0!3m2!1sru!2sua!4v1687178634081!5m2!1sru!2sua"
-                    loading="lazy"
+                    // loading="lazy"
                 ></iframe>
             </div>
         </div>

@@ -16,3 +16,12 @@
     letter-spacing: 1px;
     padding: 2rem;
 }
+
+.service__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-indent: 16px;
+    text-align: left;
+    padding: 15px;
+}

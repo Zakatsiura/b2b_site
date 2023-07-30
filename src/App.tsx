@@ -8,7 +8,7 @@ import {
     CertificatesPage,
     CamoPage,
     Part145Page,
-    PartMPage,
+    // PartMPage,
 } from './pages';
 import { MainLayout } from './layouts/MainLayout';
 
@@ -21,7 +21,7 @@ function App() {
                 <Route path={'service'} element={<ServicePage />} />
                 <Route path={'service/camo'} element={<CamoPage />} />
                 <Route path={'service/mro'} element={<Part145Page />} />
-                <Route path={'service/part-m'} element={<PartMPage />} />
+                {/* <Route path={'service/part-m'} element={<PartMPage />} /> */}
                 <Route path={'contact'} element={<ContactPage />} />
                 <Route path={'certificates'} element={<CertificatesPage />} />
             </Route>

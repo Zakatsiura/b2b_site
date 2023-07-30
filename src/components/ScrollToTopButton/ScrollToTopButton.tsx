@@ -27,7 +27,7 @@ const ScrollToTopButton: React.FC = () => {
     };
 
     return isVisible ? (
-        <img className={style.top} src={arrow} onClick={scrollToTop} />
+        <img className={style.top} src={arrow} alt='arrow' onClick={scrollToTop} />
     ) : null;
 };
 

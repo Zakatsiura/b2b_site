@@ -6,7 +6,7 @@ import Fivth from '../../assets/images/Fivth.jpg';
 import Sixth from '../../assets/images/Sixth.jpg';
 import Seventh from '../../assets/images/Seventh.jpg';
 
-export default [
+const sliderImages = [
     {
         title: '',
         description: '',
@@ -43,3 +43,5 @@ export default [
         urls: Seventh,
     },
 ];
+
+export default sliderImages;

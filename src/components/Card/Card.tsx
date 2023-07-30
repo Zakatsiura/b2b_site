@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './Card.module.css';
 import camo from '../../assets/images/tech.jpg';
-import workzone from '../../assets/images/maint_area.jpg';
+// import workzone from '../../assets/images/maint_area.jpg';
 import techs from '../../assets/images/techs.jpg'
 
 const data = [

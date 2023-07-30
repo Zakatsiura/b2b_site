@@ -21,8 +21,17 @@ const Service = () => {
             <div className={style.service__title}>
                 {locales[language].service__title}
             </div>
-            <Card />
             {/* <Tabs /> */}
+            <div className={style.service__text}>
+                {locales[language].service__text1}
+            </div>
+            <div className={style.service__text}>
+                {locales[language].service__text2}
+            </div>
+            <div className={style.service__text}>
+                {locales[language].service__text3}
+            </div>
+            <Card />
             <div className={style.service__title}>
                 {locales[language].service__gallery}
             </div>
