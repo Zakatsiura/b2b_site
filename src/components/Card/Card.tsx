@@ -43,7 +43,7 @@ const { language } = languageContext;
                   },
                   {
                       title: 'PART-145',
-                      body: 'Організація з технічного обсуговуввання (MRO)',
+                      body: 'Організація з технічного обслуговування (MRO)',
                       path: '/service/mro',
                       image: techs,
                   },
