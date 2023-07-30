@@ -1,6 +1,7 @@
 import { useContext } from 'react';
-import styles from './Camo.module.css';
 
+import styles from './Camo.module.css';
+import marker from '../../assets/icons/marker1.png';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 
@@ -88,6 +89,11 @@ const Camo = () => {
                     <ul className={styles.list}>
                         {MaintenanceList.map((item, index) => (
                             <li key={index} className={styles.list__item}>
+                                <img
+                                    className={styles.marker}
+                                    src={marker}
+                                    alt="marker"
+                                />
                                 {item}
                             </li>
                         ))}
