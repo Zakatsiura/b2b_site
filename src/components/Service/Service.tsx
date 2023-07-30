@@ -3,7 +3,6 @@ import { useContext } from 'react';
 import style from './Service.module.css';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
-// import { Tabs } from '../Tabs/Tabs';
 import { MainSlider } from '../MainSlider/MainSlider';
 import { Card } from '../Card/Card';
 import { ScrollToTopButton } from '../ScrollToTopButton/ScrollToTopButton';
@@ -21,7 +20,6 @@ const Service = () => {
             <div className={style.service__title}>
                 {locales[language].service__title}
             </div>
-            {/* <Tabs /> */}
             <div className={style.service__text}>
                 {locales[language].service__text1}
             </div>

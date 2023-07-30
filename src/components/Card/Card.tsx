@@ -1,36 +1,73 @@
-import React from 'react';
+import { useContext} from 'react';
 import { Link } from 'react-router-dom';
 
+import { LanguageContext } from '../../context/languageContext';
+import { locales } from '../../locales/locales';
 import styles from './Card.module.css';
 import camo from '../../assets/images/tech.jpg';
-// import workzone from '../../assets/images/maint_area.jpg';
 import techs from '../../assets/images/techs.jpg'
 
-const data = [
-    {
-        title: 'PART-M',
-        body: 'Continuing Airworthiness Management Organisation (CAMO)',
-        path: '/service/camo',
-        image: camo,
-    },
-    {
-        title: 'PART-145',
-        body: 'Maintenance Repair Organisation (MRO)',
-        path: '/service/mro',
-        image: techs,
-    },
-    // {
-    //     title: 'PART-66',
-    //     body: 'rules for the organization and procedures',
-    //     path: '/service/part-m',
-    //     image: workzone,
-    // },
-];
+// const data = [
+//     {
+//         title: 'PART-M',
+//         body: 'Continuing Airworthiness Management Organisation (CAMO)',
+//         path: '/service/camo',
+//         image: camo,
+//     },
+//     {
+//         title: 'PART-145',
+//         body: 'Maintenance Repair Organisation (MRO)',
+//         path: '/service/mro',
+//         image: techs,
+//     },
+// ];
 
 const Card = () => {
+
+const languageContext = useContext(LanguageContext);
+
+if (!languageContext) {
+    return null;
+}
+
+const { language } = languageContext;
+
+    
+    const data =
+        language === 'en'
+            ? [
+                  {
+                      title: 'PART-M',
+                      body: 'Continuing Airworthiness Management Organisation (CAMO)',
+                      path: '/service/camo',
+                      image: camo,
+                  },
+                  {
+                      title: 'PART-145',
+                      body: 'Maintenance Repair Organisation (MRO)',
+                      path: '/service/mro',
+                      image: techs,
+                  },
+              ]
+            : [
+                  {
+                      title: 'PART-M',
+                      body: 'Організація з управління підтриманням льотної придатності (CAMO)',
+                      path: '/service/camo',
+                      image: camo,
+                  },
+                  {
+                      title: 'PART-145',
+                      body: 'Організація з технічного обсуговуввання (MRO)',
+                      path: '/service/mro',
+                      image: techs,
+                  },
+              ];
+
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: 'auto' });
     };
+
     return (
         <section>
             <div className={styles.wrapper}>
@@ -48,7 +85,7 @@ const Card = () => {
                                     className={styles.btn}
                                     onClick={scrollToTop}
                                 >
-                                    Learn more
+                                    {locales[language].service__btntext}
                                 </button>
                             </Link>
                         </div>

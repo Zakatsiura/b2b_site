@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { useMenuItems } from './MenuItems';
-import MenuItem from '../../interfaces/interfaces';
 import './Menu.css';
 import cross from '../../assets/images/cross.png';
+
+interface MenuItem {
+    itemText: string;
+    itemLink: string;
+}
 
 interface MenuProps {
     isOpen: boolean;

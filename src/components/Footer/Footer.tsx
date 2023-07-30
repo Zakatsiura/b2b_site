@@ -2,10 +2,14 @@ import { Link } from 'react-router-dom';
 
 import style from './Footer.module.css';
 import { useMenuItems } from '../Menu/MenuItems';
-import MenuItem from '../../interfaces/interfaces';
 import facebook from '../../assets/icons/facebook-icon.png';
 import linkedin from '../../assets/icons/linkedin-icon.png';
 import instagram from '../../assets/icons/instagram-icon.png';
+
+interface MenuItem {
+    itemText: string;
+    itemLink: string;
+}
 
 const Footer = () => {
     const items = useMenuItems();
