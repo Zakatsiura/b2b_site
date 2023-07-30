@@ -6,6 +6,7 @@ import { locales } from '../../locales/locales';
 import styles from './Card.module.css';
 import camo from '../../assets/images/tech.jpg';
 import techs from '../../assets/images/techs.jpg';
+import sale from '../../assets/images/sale.jpg';
 
 const Card = () => {
     const languageContext = useContext(LanguageContext);
@@ -31,6 +32,12 @@ const Card = () => {
                       path: '/service/mro',
                       image: techs,
                   },
+                  {
+                      title: 'FOR SALE',
+                      body: 'Aviation parts for sale',
+                      path: '/service/sale',
+                      image: sale,
+                  },
               ]
             : [
                   {
@@ -44,6 +51,12 @@ const Card = () => {
                       body: 'Організація з технічного обслуговування (MRO)',
                       path: '/service/mro',
                       image: techs,
+                  },
+                  {
+                      title: 'ПРОДАЖ',
+                      body: 'Авіаційні запчастини на продаж',
+                      path: '/service/sale',
+                      image: sale,
                   },
               ];
 
