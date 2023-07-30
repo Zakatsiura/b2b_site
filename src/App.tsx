@@ -20,7 +20,7 @@ function App() {
                 <Route path={'aircompany'} element={<AirCompanyPage />} />
                 <Route path={'service'} element={<ServicePage />} />
                 <Route path={'service/camo'} element={<CamoPage />} />
-                <Route path={'service/part-145'} element={<Part145Page />} />
+                <Route path={'service/mro'} element={<Part145Page />} />
                 <Route path={'service/part-m'} element={<PartMPage />} />
                 <Route path={'contact'} element={<ContactPage />} />
                 <Route path={'certificates'} element={<CertificatesPage />} />
