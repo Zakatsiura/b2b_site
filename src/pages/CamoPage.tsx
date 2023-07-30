@@ -1,9 +1,10 @@
-import { ScrollToTopButton, Tabs } from "../components";
+import { ScrollToTopButton, Tabs, Video } from "../components";
 
 const CamoPage = () => {
     return <div>
         <Tabs />
-        <ScrollToTopButton/>
+        <Video/>
+        <ScrollToTopButton />
     </div>;
 }
 

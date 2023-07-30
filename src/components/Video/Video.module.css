@@ -1,0 +1,23 @@
+.video__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 1400px;
+    background-color: var(--lightwhite);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--primaryblack);
+    
+}
+
+.video {
+    width: 50%;
+    border: 2px solid var(--primarygreen);
+}
+
+@media (max-width: 900px) {
+    .video {
+            width: 90%;
+        }
+}
