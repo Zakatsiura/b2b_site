@@ -15,7 +15,7 @@
 .footer__nav_list {
     display: flex;
     justify-content: center;
-    gap: 7rem;
+    gap: 7%;
     padding: 0;
     list-style-type: none;
     color: inherit;

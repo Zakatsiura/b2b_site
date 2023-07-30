@@ -18,10 +18,10 @@ const Camo = () => {
             ? [
                   'Scheduled maintenance planning and arrangement',
                   'Unscheduled and Aircraft-On-Ground (AOG) maintenance arrangement',
-                  'Aircraft defect/deferred defect control according to the minimum equipment list',
+                  'Aircraft defect / deferred defect control according to the minimum equipment list',
                   'Airworthiness directives and service bulletins assessment and recommendation',
                   'Certificate of Airworthiness (C of A) renewal',
-                  'Development/control/variation of maintenance programm',
+                  'Development / control/variation of maintenance programm',
                   'Coordination of import and export of new and used aircraft',
                   'Pre-purchase inspection (PPI)',
                   'Engine health monitoring',
@@ -49,6 +49,7 @@ const Camo = () => {
                   'Управління технічними записами та документами повітряного судна з питань продовження придатності до польотів',
                   'Контроль над рахунками і записами про обслуговування',
               ];
+
     return (
         <>
             <section className={styles.wrapper}>
@@ -59,17 +60,21 @@ const Camo = () => {
                     <p className={styles.text}>
                         {locales[language].camo__text1}
                     </p>
-                    <ul>
-                        <li>EC120</li>
-                        <li>EC130</li>
-                        <li>AS350 series (H125)</li>
-                        <li>AS 355</li>
-                        <li>EC135</li>
-                        <li>MBB BK117C-2 (EC145)</li>
-                        <li>MBB BK117D-2</li>
-                        <li>Bell 407</li>
-                        <li>Bell 429</li>
-                        <li>Bell 430</li>
+                    <ul className={styles.list}>
+                        <li className={styles.list__item}>EC120</li>
+                        <li className={styles.list__item}>EC130</li>
+                        <li className={styles.list__item}>
+                            AS350 series (H125)
+                        </li>
+                        <li className={styles.list__item}>AS 355</li>
+                        <li className={styles.list__item}>EC135</li>
+                        <li className={styles.list__item}>
+                            MBB BK117C-2 (EC145)
+                        </li>
+                        <li className={styles.list__item}>MBB BK117D-2</li>
+                        <li className={styles.list__item}>Bell 407</li>
+                        <li className={styles.list__item}>Bell 429</li>
+                        <li className={styles.list__item}>Bell 430</li>
                     </ul>
                     <p className={styles.text}>
                         {locales[language].camo__text2}
@@ -80,50 +85,13 @@ const Camo = () => {
                     <p className={styles.text}>
                         {locales[language].camo__text4}
                     </p>
-
-                    <ul>
+                    <ul className={styles.list}>
                         {MaintenanceList.map((item, index) => (
-                            <li key={index}>{item}</li>
+                            <li key={index} className={styles.list__item}>
+                                {item}
+                            </li>
                         ))}
                     </ul>
-
-                    {/* <ul>
-                        <li>Scheduled maintenance planning and arrangement</li>
-                        <li>
-                            Unscheduled and Aircraft-On-Ground (AOG) maintenance
-                            arrangement
-                        </li>
-                        <li>
-                            Aircraft defect/deferred defect control according to
-                            the minimum equipment list
-                        </li>
-                        <li>
-                            Airworthiness directives and service bulletins
-                            assessment and recommendation
-                        </li>
-                        <li>Certificate of Airworthiness (C of A) renewal</li>
-                        <li>
-                            Development/control/variation of maintenance
-                            programm
-                        </li>
-                        <li>
-                            Coordination of import and export of new and used
-                            aircraft
-                        </li>
-                        <li>Pre-purchase inspection (PPI)</li>
-                        <li>Engine health monitoring</li>
-                        <li>Life-limited parts control</li>
-                        <li>
-                            Analysis and assessment of modification and repairs
-                        </li>
-                        <li>Onsite maintenance event oversight</li>
-                        <li>Performance of airworthiness review</li>
-                        <li>
-                            Management of continuing airworthiness aircraft
-                            technical records and document
-                        </li>
-                        <li>Maintenance invoice and record control</li>
-                    </ul> */}
                 </div>
             </section>
         </>
