@@ -73,6 +73,9 @@ const Main: React.FC = () => {
                         />
                     </div>
                     <p className={style.main__text}>
+                        {locales[language].main__p}
+                    </p>
+                    <p className={style.main__text}>
                         {locales[language].main__p5}
                     </p>
                 </div>
