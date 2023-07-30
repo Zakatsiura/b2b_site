@@ -5,6 +5,8 @@ import marker from '../../assets/icons/marker1.png';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 
+import { MaintenanceList } from './CamoData';
+
 const Camo = () => {
     const languageContext = useContext(LanguageContext);
 
@@ -14,42 +16,7 @@ const Camo = () => {
 
     const { language } = languageContext;
 
-    const MaintenanceList: string[] =
-        language === 'en'
-            ? [
-                  'Scheduled maintenance planning and arrangement',
-                  'Unscheduled and Aircraft-On-Ground (AOG) maintenance arrangement',
-                  'Aircraft defect / deferred defect control according to the minimum equipment list',
-                  'Airworthiness directives and service bulletins assessment and recommendation',
-                  'Certificate of Airworthiness (C of A) renewal',
-                  'Development / control/variation of maintenance programm',
-                  'Coordination of import and export of new and used aircraft',
-                  'Pre-purchase inspection (PPI)',
-                  'Engine health monitoring',
-                  'Life-limited parts control',
-                  'Analysis and assessment of modification and repairs',
-                  'Onsite maintenance event oversight',
-                  'Performance of airworthiness review',
-                  'Management of continuing airworthiness aircraft technical records and document',
-                  'Maintenance invoice and record control',
-              ]
-            : [
-                  'Планування та організація планового технічного обслуговування',
-                  'Організація непланового технічного обслуговування та обслуговування повітряних суден на землі',
-                  'Контроль за дефектами повітряного судна / відстроченими дефектами згідно зі списком мінімального обладнання',
-                  'Оцінка та рекомендації стосовно повітряних директив та сервісних бюлетенів',
-                  'Поновлення сертифікату придатності до польотів (C of A)',
-                  'Розробка / контроль / зміна програми технічного обслуговування',
-                  'Координація імпорту та експорту нових та вживаних повітряних суден',
-                  'Огляд перед купівлею (PPI)',
-                  'Моніторинг стану двигуна',
-                  'Контроль обмеженого терміну експлуатації деталей',
-                  'Аналіз та оцінка модифікацій та ремонтів',
-                  'Контроль за подіями технічного обслуговування на місці',
-                  'Проведення перегляду придатності до польотів',
-                  'Управління технічними записами та документами повітряного судна з питань продовження придатності до польотів',
-                  'Контроль над рахунками і записами про обслуговування',
-              ];
+    const maintenanceItems = MaintenanceList();
 
     return (
         <>
@@ -87,7 +54,7 @@ const Camo = () => {
                         {locales[language].camo__text4}
                     </p>
                     <ul className={styles.list}>
-                        {MaintenanceList.map((item, index) => (
+                        {maintenanceItems.map((item, index) => (
                             <li key={index} className={styles.list__item}>
                                 <img
                                     className={styles.marker}
