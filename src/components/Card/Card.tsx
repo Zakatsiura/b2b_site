@@ -1,23 +1,21 @@
-import { useContext} from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 import styles from './Card.module.css';
 import camo from '../../assets/images/tech.jpg';
-import techs from '../../assets/images/techs.jpg'
+import techs from '../../assets/images/techs.jpg';
 
 const Card = () => {
+    const languageContext = useContext(LanguageContext);
 
-const languageContext = useContext(LanguageContext);
+    if (!languageContext) {
+        return null;
+    }
 
-if (!languageContext) {
-    return null;
-}
+    const { language } = languageContext;
 
-const { language } = languageContext;
-
-    
     const data =
         language === 'en'
             ? [

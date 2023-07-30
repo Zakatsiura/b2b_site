@@ -15,9 +15,7 @@ const Mro = () => {
     return (
         <>
             <section className={styles.wrapper}>
-                <h1 className={styles.title}>
-                    {locales[language].mro__title}
-                </h1>
+                <h1 className={styles.title}>{locales[language].mro__title}</h1>
             </section>
         </>
     );
