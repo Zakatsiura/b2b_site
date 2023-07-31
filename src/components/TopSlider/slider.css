@@ -4,7 +4,7 @@
 }
 
 :root {
-    --heights: 50vh;
+    --heights: 100vh;
     --widths: 100%;
 }
 
@@ -114,10 +114,35 @@
 .slider-container:hover .dot {
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 .slider-container:hover .active-dot {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 .play-pause {
     color: black;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --heights: 80vh;
+    }
+}
+
+@media (max-width: 900px) {
+    :root {
+        --heights: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --heights: 60vh;
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --heights: 50vh;
+    }
 }

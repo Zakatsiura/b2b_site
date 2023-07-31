@@ -7,72 +7,12 @@
     color: var(--primaryblack);
 }
 
-.main__top {
-    display: flex;
-    justify-content: center;
-    background-color: var(--lightgreen);
-    padding: 5px;
-}
-
-.slogan {
-    color: var(--primaryblack);
-    font-size: 36px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-.upper__img {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    right: 0;
-    transform: translateX(100%);
-    animation: moveCenter 1s forwards;
-    width: 100%;
-    max-width: 1400px;
-}
-
-@keyframes moveCenter {
-    to {
-        transform: translateX(0%);
-    }
-}
-
-.main__picture {
-    display: flex;
-    margin: 0 auto;
-    width: 60%;
-    border-radius: 0.5rem;
-}
-
-.main__card {
-    display: flex;
-    align-items: center;
-}
-
-.logo__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 150px;
-}
-
-.logo__flag {
-    width: 150px;
-}
-
 .main__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .main__text {
@@ -83,37 +23,4 @@
     text-align: left;
     padding: 15px;
     letter-spacing: 1px;
-}
-
-@media (max-width: 900px) {
-    .logo__block {
-        flex-direction: column;
-    }
-
-    .main__title {
-        text-align: center;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .upper__img {
-        display: flex;
-        justify-content: center;
-    }
-
-    .main__card {
-        flex-direction: column;
-    }
-
-    .main__picture {
-
-        width: 85%;
-    }
-
-    .slogan {
-        font-size: 1.8rem;
-    }
-
 }
