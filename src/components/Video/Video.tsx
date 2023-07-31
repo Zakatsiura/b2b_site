@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 import { LanguageContext } from '../../context/languageContext';
-import { locales } from '../../locales/locales';
+// import { locales } from '../../locales/locales';
 
 import styles from './Video.module.css';
-import main from '../../assets/video/videomain.mp4';
+import main from '../../assets/video/testvideo.mp4';
 
 const Video = () => {
     const languageContext = useContext(LanguageContext);
@@ -22,7 +22,7 @@ const Video = () => {
                 </video>
                 <div className={styles.content}>
                     <h1 className={styles.content}>
-                        {locales[language].slogan}
+                        {/* {locales[language].slogan} */}
                         <p>test video</p>
                     </h1>
                 </div>
