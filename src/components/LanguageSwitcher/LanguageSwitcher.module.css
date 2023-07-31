@@ -10,3 +10,13 @@
     padding: 0;
     cursor: pointer;
 }
+
+.language__button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .language__button:hover {
+        transform: scale(1);
+    }
+}
