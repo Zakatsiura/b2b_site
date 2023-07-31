@@ -11,9 +11,11 @@ const LanguageSwitcher: React.FC = () => {
     const { language, toggleLanguage } = useContext(LanguageContext)!;
 
     return (
-        <button className={style.language__button} onClick={toggleLanguage}>
-            {language === 'en' ? 'UA' : 'EN'}
-        </button>
+        <>
+            <button className={style.language__button} onClick={toggleLanguage}>
+                {language === 'en' ? 'UA' : 'EN'}
+            </button>
+        </>
     );
 };
 

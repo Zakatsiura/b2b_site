@@ -53,46 +53,53 @@ const Certificates = () => {
     };
 
     return (
-        <div className={styles.wrapper}>
-            <h2 className={styles.title}>
-                {locales[language].certificates__titile}
-            </h2>
-            {Array.from({ length: Math.ceil(imagePaths.length / 2) }).map(
-                (_, index) => (
-                    <div key={index} className={styles.imageRow}>
-                        {imagePaths
-                            .slice(index * 2, index * 2 + 2)
-                            .map((imagePath, i) => (
-                                <div key={i} className={styles.imageContainer}>
-                                    <img
-                                        src={imagePath}
-                                        alt={`Certificate ${index * 2 + i + 1}`}
-                                        className={styles.image}
-                                        onClick={() => openModal(imagePath)}
-                                    />
-                                </div>
-                            ))}
-                    </div>
-                )
-            )}
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                contentLabel="Enlarged Image"
-                ariaHideApp={false}
-                shouldCloseOnOverlayClick={true}
-            >
-                {selectedImage && (
-                    <img
-                        src={selectedImage}
-                        alt="Enlarged Certificate"
-                        className={styles.enlargedImage}
-                        onClick={closeModal}
-                    />
+        <>
+            <div className={styles.wrapper}>
+                <h2 className={styles.title}>
+                    {locales[language].certificates__titile}
+                </h2>
+                {Array.from({ length: Math.ceil(imagePaths.length / 2) }).map(
+                    (_, index) => (
+                        <div key={index} className={styles.imageRow}>
+                            {imagePaths
+                                .slice(index * 2, index * 2 + 2)
+                                .map((imagePath, i) => (
+                                    <div
+                                        key={i}
+                                        className={styles.imageContainer}
+                                    >
+                                        <img
+                                            src={imagePath}
+                                            alt={`Certificate ${
+                                                index * 2 + i + 1
+                                            }`}
+                                            className={styles.image}
+                                            onClick={() => openModal(imagePath)}
+                                        />
+                                    </div>
+                                ))}
+                        </div>
+                    )
                 )}
-            </Modal>
-            <ScrollToTopButton />
-        </div>
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    contentLabel="Enlarged Image"
+                    ariaHideApp={false}
+                    shouldCloseOnOverlayClick={true}
+                >
+                    {selectedImage && (
+                        <img
+                            src={selectedImage}
+                            alt="Enlarged Certificate"
+                            className={styles.enlargedImage}
+                            onClick={closeModal}
+                        />
+                    )}
+                </Modal>
+                <ScrollToTopButton />
+            </div>
+        </>
     );
 };
 

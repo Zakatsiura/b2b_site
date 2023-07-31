@@ -65,7 +65,7 @@ const Card = () => {
     };
 
     return (
-        <section>
+        <>
             <div className={styles.wrapper}>
                 {data.map((item) => (
                     <div
@@ -88,7 +88,7 @@ const Card = () => {
                     </div>
                 ))}
             </div>
-        </section>
+        </>
     );
 };
 

@@ -37,22 +37,24 @@ const MainSlider = () => {
     }, [currentIndex]);
 
     return (
-        <div className={style.slider__wrapper}>
-            {images.map((image, index) => (
-                <img
-                    key={index}
-                    className={`${style.slider__slide} ${
-                        currentIndex === index ? style.active : ''
-                    }`}
-                    style={{
-                        transform: `translateX(-${currentIndex * 100}%)`,
-                        transition: 'transform 0.8s ease',
-                    }}
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                />
-            ))}
-        </div>
+        <>
+            <div className={style.slider__wrapper}>
+                {images.map((image, index) => (
+                    <img
+                        key={index}
+                        className={`${style.slider__slide} ${
+                            currentIndex === index ? style.active : ''
+                        }`}
+                        style={{
+                            transform: `translateX(-${currentIndex * 100}%)`,
+                            transition: 'transform 0.8s ease',
+                        }}
+                        src={image}
+                        alt={`Slide ${index + 1}`}
+                    />
+                ))}
+            </div>
+        </>
     );
 };
 

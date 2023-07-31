@@ -12,17 +12,19 @@ interface DotsProps {
 
 function Dots({ activeIndex, onClick, sliderImage }: DotsProps) {
     return (
-        <div className="all-dots">
-            {sliderImage.map((slide: Slide, index: number) => (
-                <span
-                    key={index}
-                    className={`${
-                        activeIndex === index ? 'dot active-dot' : 'dot'
-                    }`}
-                    onClick={() => onClick(index)}
-                ></span>
-            ))}
-        </div>
+        <>
+            <div className="all-dots">
+                {sliderImage.map((slide: Slide, index: number) => (
+                    <span
+                        key={index}
+                        className={`${
+                            activeIndex === index ? 'dot active-dot' : 'dot'
+                        }`}
+                        onClick={() => onClick(index)}
+                    ></span>
+                ))}
+            </div>
+        </>
     );
 }
 

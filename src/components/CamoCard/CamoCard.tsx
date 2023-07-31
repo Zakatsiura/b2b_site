@@ -16,30 +16,32 @@ const CamoCard = () => {
     ];
 
     return (
-        <div className={styles.wrapper}>
-            <div className={styles.container}>
-                {cardData.map((data, index) => (
-                    <div className={styles.card} key={index}>
-                        <div className={styles.front}>
-                            <img
-                                className={styles.picture}
-                                src={data.frontImage}
-                                alt={data.alt}
-                            />
-                        </div>
-                        <div className={styles.back}>
-                            <div className={styles.content}>
+        <>
+            <div className={styles.wrapper}>
+                <div className={styles.container}>
+                    {cardData.map((data, index) => (
+                        <div className={styles.card} key={index}>
+                            <div className={styles.front}>
                                 <img
                                     className={styles.picture}
-                                    src={camocard}
-                                    alt="Camo"
+                                    src={data.frontImage}
+                                    alt={data.alt}
                                 />
                             </div>
+                            <div className={styles.back}>
+                                <div className={styles.content}>
+                                    <img
+                                        className={styles.picture}
+                                        src={camocard}
+                                        alt="Camo"
+                                    />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

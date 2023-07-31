@@ -19,25 +19,29 @@ const TopSlider = () => {
     }, [activeIndex]);
 
     return (
-        <div className="slider-container">
-            <SliderContent
-                activeIndex={activeIndex}
-                sliderImage={sliderImages}
-            />
-            <Arrows
-                prevSlide={() =>
-                    setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-                }
-                nextSlide={() =>
-                    setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-                }
-            />
-            <Dots
-                activeIndex={activeIndex}
-                sliderImage={sliderImages}
-                onClick={(activeIndex) => setActiveIndex(activeIndex)}
-            />
-        </div>
+        <>
+            <div className="slider-container">
+                <SliderContent
+                    activeIndex={activeIndex}
+                    sliderImage={sliderImages}
+                />
+                <Arrows
+                    prevSlide={() =>
+                        setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+                    }
+                    nextSlide={() =>
+                        setActiveIndex(
+                            activeIndex === len ? 0 : activeIndex + 1
+                        )
+                    }
+                />
+                <Dots
+                    activeIndex={activeIndex}
+                    sliderImage={sliderImages}
+                    onClick={(activeIndex) => setActiveIndex(activeIndex)}
+                />
+            </div>
+        </>
     );
 };
 

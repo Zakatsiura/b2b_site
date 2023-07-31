@@ -22,7 +22,7 @@ const Main: React.FC = () => {
     const { language } = languageContext;
 
     return (
-        <div>
+        <>
             <TopSlider />
             <ScrollToTopButton />
             <div className={style.main__top}>
@@ -81,7 +81,7 @@ const Main: React.FC = () => {
                 </div>
                 <Partners />
             </div>
-        </div>
+        </>
     );
 };
 

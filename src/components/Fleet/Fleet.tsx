@@ -2,9 +2,9 @@ import React from 'react';
 
 import styles from './Fleet.module.css';
 import h125 from '../../assets/images/h125red.jpg';
-import h130 from '../../assets/images/h130.jpg'
-import h135 from '../../assets/images/H135.jpg'
-import h145 from '../../assets/images/h145c2.jpg'
+import h130 from '../../assets/images/h130.jpg';
+import h135 from '../../assets/images/H135.jpg';
+import h145 from '../../assets/images/h145c2.jpg';
 
 const helicoptersData = [
     {
@@ -31,64 +31,68 @@ const helicoptersData = [
 
 const Fleet = () => {
     return (
-        <section className={styles.fleet}>
-            <div className={styles.wrapper}>
-                <h2 className={styles.title}>COMPANY FLEET</h2>
-                <div className={styles.header}>
-                    <p className={styles.text}>
-                        Welcome to B2B Aviation Air Company that specializes in
-                        operating advanced helicopters produced by Airbus
-                        Helicopters. Our company offers a wide range of
-                        services, including passenger transport, medical
-                        evacuations, VIP flights, as well as cargo and rescue
-                        operations.
-                    </p>
-                    <p className={styles.text}>
-                        Our helicopter fleet consists of the following models:
-                    </p>
-                </div>
+        <>
+            <section className={styles.fleet}>
+                <div className={styles.wrapper}>
+                    <h2 className={styles.title}>COMPANY FLEET</h2>
+                    <div className={styles.header}>
+                        <p className={styles.text}>
+                            Welcome to B2B Aviation Air Company that specializes
+                            in operating advanced helicopters produced by Airbus
+                            Helicopters. Our company offers a wide range of
+                            services, including passenger transport, medical
+                            evacuations, VIP flights, as well as cargo and
+                            rescue operations.
+                        </p>
+                        <p className={styles.text}>
+                            Our helicopter fleet consists of the following
+                            models:
+                        </p>
+                    </div>
 
-                <div className={styles.main}>
-                    <div className={styles.main__row}>
-                        {helicoptersData.map((helicopter, index) => (
-                            <div className={styles.card} key={index}>
-                                <div
-                                    className={styles.card__img}
-                                    style={{
-                                        backgroundImage: `url(${helicopter.image})`,
-                                    }}
-                                ></div>
-                                <div className={styles.card__content}>
-                                    <h3 className={styles.card__title}>
-                                        {helicopter.title}
-                                    </h3>
-                                    <div className={styles.card__body}>
-                                        {helicopter.body}
+                    <div className={styles.main}>
+                        <div className={styles.main__row}>
+                            {helicoptersData.map((helicopter, index) => (
+                                <div className={styles.card} key={index}>
+                                    <div
+                                        className={styles.card__img}
+                                        style={{
+                                            backgroundImage: `url(${helicopter.image})`,
+                                        }}
+                                    ></div>
+                                    <div className={styles.card__content}>
+                                        <h3 className={styles.card__title}>
+                                            {helicopter.title}
+                                        </h3>
+                                        <div className={styles.card__body}>
+                                            {helicopter.body}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
+                    </div>
+
+                    <div>
+                        <p className={styles.text}>
+                            Each of our helicopters is certified,
+                            well-maintained, and serviced by experienced
+                            professional mechanics. The safety of our clients is
+                            our priority, and we strictly adhere to all
+                            regulatory requirements and standards.
+                        </p>
+                        <p className={styles.text}>
+                            We take pride in providing reliable and comfortable
+                            transportation, and our experienced staff is always
+                            ready to deliver top-notch service on the ground and
+                            in the air. Whether you need swift transportation, a
+                            rescue operation, or VIP-level comfort, we are
+                            always delighted to offer our services.
+                        </p>
                     </div>
                 </div>
-
-                <div>
-                    <p className={styles.text}>
-                        Each of our helicopters is certified, well-maintained,
-                        and serviced by experienced professional mechanics. The
-                        safety of our clients is our priority, and we strictly
-                        adhere to all regulatory requirements and standards.
-                    </p>
-                    <p className={styles.text}>
-                        We take pride in providing reliable and comfortable
-                        transportation, and our experienced staff is always
-                        ready to deliver top-notch service on the ground and in
-                        the air. Whether you need swift transportation, a rescue
-                        operation, or VIP-level comfort, we are always delighted
-                        to offer our services.
-                    </p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 

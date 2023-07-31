@@ -6,7 +6,7 @@ function SliderContent({
     sliderImage: { title: string; description: string; urls: string }[];
 }) {
     return (
-        <section>
+        <>
             {sliderImage.map(
                 (
                     slide: { title: string; description: string; urls: string },
@@ -24,7 +24,7 @@ function SliderContent({
                     </div>
                 )
             )}
-        </section>
+        </>
     );
 }
 
