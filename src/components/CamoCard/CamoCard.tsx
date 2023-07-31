@@ -8,66 +8,23 @@ import camocard4 from '../../assets/images/camocard4.jpg';
 import camocard from '../../assets/images/Logo_original_stroked.png';
 
 const CamoCard = () => {
+    const cardData = [
+        { frontImage: camocard1, alt: 'Camo 1' },
+        { frontImage: camocard3, alt: 'Camo 2' },
+        { frontImage: camocard4, alt: 'Camo 3' },
+        { frontImage: camocard2, alt: 'Camo 4' },
+    ];
+
     return (
-        <>
-            <div className={styles.wrapper}>
-                <div className={styles.container}>
-                    <div className={styles.card}>
+        <div className={styles.wrapper}>
+            <div className={styles.container}>
+                {cardData.map((data, index) => (
+                    <div className={styles.card} key={index}>
                         <div className={styles.front}>
                             <img
                                 className={styles.picture}
-                                src={camocard1}
-                                alt="Camo 1"
-                            />
-                        </div>
-                        <div className={styles.back}>
-                            <img
-                                className={styles.picture}
-                                src={camocard}
-                                alt="Camo"
-                            />
-                        </div>
-                    </div>
-
-                    <div className={styles.card}>
-                        <div className={styles.front}>
-                            <img
-                                className={styles.picture}
-                                src={camocard3}
-                                alt="Camo 2"
-                            />
-                        </div>
-
-                        <div className={styles.back}>
-                            <img
-                                className={styles.picture}
-                                src={camocard}
-                                alt="Camo"
-                            />
-                        </div>
-                    </div>
-                    <div className={styles.card}>
-                        <div className={styles.front}>
-                            <img
-                                className={styles.picture}
-                                src={camocard4}
-                                alt="Camo 3"
-                            />
-                        </div>
-                        <div className={styles.back}>
-                            <img
-                                className={styles.picture}
-                                src={camocard}
-                                alt="Camo"
-                            />
-                        </div>
-                    </div>
-                    <div className={styles.card}>
-                        <div className={styles.front}>
-                            <img
-                                className={styles.picture}
-                                src={camocard2}
-                                alt="Camo 4"
+                                src={data.frontImage}
+                                alt={data.alt}
                             />
                         </div>
                         <div className={styles.back}>
@@ -80,9 +37,9 @@ const CamoCard = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                ))}
             </div>
-        </>
+        </div>
     );
 };
 

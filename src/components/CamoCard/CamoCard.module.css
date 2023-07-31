@@ -12,6 +12,8 @@
 }
 
 .container {
+    max-width: 1000px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -49,6 +51,7 @@
     transition: transform 0.5s ease;
     border-radius: 10px;
     background: linear-gradient(#D6D6D6, #F2F2F2);
+    border: 2px solid var(--secondarygreen);
 }
 
 .front {
@@ -66,7 +69,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 @media (max-width: 1000px) {
@@ -87,7 +89,7 @@
             max-width: 25ch;
             cursor: pointer;
             transform: translate(0%, 0%);
-            margin: 1rem;
+            margin: 0;
             background-size: cover;
         }
 }
