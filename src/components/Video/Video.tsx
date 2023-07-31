@@ -6,7 +6,9 @@ import styles from './Video.module.css';
 import main from '../../assets/video/testvideo.mp4';
 
 const Video: React.FC = () => {
+    
     const videoRef = useRef<HTMLVideoElement>(null);
+
     useEffect(() => {
         const videoElement = videoRef.current;
 
@@ -18,6 +20,7 @@ const Video: React.FC = () => {
             }
         }
     }, []);
+
     const languageContext = useContext(LanguageContext);
 
     if (!languageContext) {
