@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef } from 'react';
+
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
-
 import styles from './Video.module.css';
 import main from '../../assets/video/testvideo.mp4';
 
@@ -14,11 +14,7 @@ const Video: React.FC = () => {
             const playPromise = videoElement.play();
 
             if (playPromise !== undefined) {
-                playPromise
-                    .then(() => {
-                    })
-                    .catch((error) => {
-                    });
+                playPromise.then(() => {}).catch((error) => {});
             }
         }
     }, []);
@@ -29,7 +25,6 @@ const Video: React.FC = () => {
     }
 
     const { language } = languageContext;
-
 
     return (
         <>
