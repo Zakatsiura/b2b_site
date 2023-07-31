@@ -5,11 +5,28 @@ import { locales } from '../../locales/locales';
 import styles from './Video.module.css';
 import main from '../../assets/video/testvideo.mp4';
 
-interface VideoProps {
-    // Добавьте необходимые пропсы для компонента, если есть
-}
+const Video: React.FC = () => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+    useEffect(() => {
+        const videoElement = videoRef.current;
 
-const Video: React.FC<VideoProps> = () => {
+        // Check if the video is already muted (in case the user already interacted with the page)
+        if (videoElement && videoElement.muted) {
+            // Play the video programmatically to force autoplay on iPhones
+            const playPromise = videoElement.play();
+
+            // Handle the promise returned by the play() method
+            if (playPromise !== undefined) {
+                playPromise
+                    .then(() => {
+                        // Autoplay started successfully
+                    })
+                    .catch((error) => {
+                        // Autoplay failed, you may need to display a play button or a user gesture to start the video
+                    });
+            }
+        }
+    }, []);
     const languageContext = useContext(LanguageContext);
 
     if (!languageContext) {
@@ -17,39 +34,19 @@ const Video: React.FC<VideoProps> = () => {
     }
 
     const { language } = languageContext;
-    const videoRef = useRef<HTMLVideoElement>(null);
 
-    useEffect(() => {
-        // Автовоспроизведение с заглушенным звуком при загрузке компонента
-        if (videoRef.current) {
-            videoRef.current.muted = true;
-            videoRef.current.play().catch((error) => {
-                console.error('Autoplay error:', error);
-            });
-        }
-    }, []);
-
-    const handlePlay = () => {
-        // Включение звука при воспроизведении видео
-        if (videoRef.current) {
-            videoRef.current.muted = false;
-        }
-    };
 
     return (
         <>
             <section className={styles.main}>
                 <div className={styles.overlay}></div>
                 <video
-                    ref={videoRef}
                     autoPlay
                     loop
                     muted
-                    playsInline // Включить автовоспроизведение на iOS
+                    playsInline
                     className={styles.video}
-                    onError={(e) => {
-                        console.error('Video error:', e);
-                    }}
+                    ref={videoRef}
                 >
                     <source src={main} type="video/mp4" />
                 </video>
