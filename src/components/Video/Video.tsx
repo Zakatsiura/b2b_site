@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef } from 'react';
 import { LanguageContext } from '../../context/languageContext';
-// import { locales } from '../../locales/locales';
+import { locales } from '../../locales/locales';
 
 import styles from './Video.module.css';
 import main from '../../assets/video/testvideo.mp4';
@@ -47,8 +47,8 @@ const Video: React.FC = () => {
                 </video>
                 <div className={styles.content}>
                     <h1 className={styles.content}>
-                        {/* {locales[language].slogan}
-                        <p>test video</p> */}
+                        {locales[language].slogan}
+                        <p>test video</p>
                     </h1>
                 </div>
             </section>
