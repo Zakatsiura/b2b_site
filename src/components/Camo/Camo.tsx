@@ -4,7 +4,7 @@ import styles from './Camo.module.css';
 import marker from '../../assets/icons/marker1.png';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
-
+import { helicopters } from './CamoTypes';
 import { MaintenanceList } from './CamoData';
 
 const Camo = () => {
@@ -28,22 +28,15 @@ const Camo = () => {
                     <p className={styles.text}>
                         {locales[language].camo__text1}
                     </p>
-                    <ul className={styles.list}>
-                        <li className={styles.list__item}>EC120</li>
-                        <li className={styles.list__item}>EC130</li>
-                        <li className={styles.list__item}>
-                            AS350 series (H125)
-                        </li>
-                        <li className={styles.list__item}>AS 355</li>
-                        <li className={styles.list__item}>EC135</li>
-                        <li className={styles.list__item}>
-                            MBB BK117C-2 (EC145)
-                        </li>
-                        <li className={styles.list__item}>MBB BK117D-2</li>
-                        <li className={styles.list__item}>Bell 407</li>
-                        <li className={styles.list__item}>Bell 429</li>
-                        <li className={styles.list__item}>Bell 430</li>
+
+                    <ul className={styles.list__helicopter}>
+                        {helicopters.map((helicopter, index) => (
+                            <li key={index} className={styles.list__item}>
+                                {helicopter}
+                            </li>
+                        ))}
                     </ul>
+
                     <p className={styles.text}>
                         {locales[language].camo__text2}
                     </p>
