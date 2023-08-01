@@ -4,7 +4,7 @@
 }
 
 :root {
-    --heights: 100vh;
+    --heights: 80vh;
     --widths: 100%;
 }
 
@@ -121,12 +121,6 @@
 
 .play-pause {
     color: black;
-}
-
-@media (max-width: 1200px) {
-    :root {
-        --heights: 80vh;
-    }
 }
 
 @media (max-width: 900px) {
