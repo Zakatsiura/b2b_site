@@ -30,6 +30,7 @@
     display: grid;
     place-items: center;
     grid-gap: 40px;
+    text-transform: uppercase;
 }
 
 .Menu>.Menu-items>a {
