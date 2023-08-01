@@ -1,5 +1,4 @@
 .wrapper {
-    max-width: 1400px;
     margin: 0 auto;
     background-color: var(--lightwhite);
     font-size: 1.2rem;
@@ -17,8 +16,6 @@
     padding: 2rem 0;
     text-transform: uppercase;
 }
-
-/* .text__wrapper {} */
 
 .marker {
     width: 1.3rem;

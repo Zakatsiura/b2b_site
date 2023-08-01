@@ -1,6 +1,10 @@
-import { useState, useEffect } from 'react';
+import React, { useRef, useContext } from 'react';
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
-import style from './MainSlider.module.css';
+import styles from './MainSlider.module.css';
+import { LanguageContext } from '../../context/languageContext';
+import { locales } from '../../locales/locales';
+
 import slide1 from '../../assets/images/slide1.jpg';
 import slide2 from '../../assets/images/slide9.jpg';
 import slide3 from '../../assets/images/slide7.jpg';
@@ -25,34 +29,56 @@ const images = [
     slide10,
 ];
 
-const MainSlider = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+const MainSlider: React.FC = () => {
+    const sliderRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 5000);
+    const slideLeft = () => {
+        if (sliderRef.current) {
+            sliderRef.current.scrollLeft -= 500;
+        }
+    };
 
-        return () => clearTimeout(timer);
-    }, [currentIndex]);
+    const slideRight = () => {
+        if (sliderRef.current) {
+            sliderRef.current.scrollLeft += 500;
+        }
+    };
+
+    const languageContext = useContext(LanguageContext);
+
+    if (!languageContext) {
+        return null;
+    }
+
+    const { language } = languageContext;
 
     return (
         <>
-            <div className={style.slider__wrapper}>
-                {images.map((image, index) => (
-                    <img
-                        key={index}
-                        className={`${style.slider__slide} ${
-                            currentIndex === index ? style.active : ''
-                        }`}
-                        style={{
-                            transform: `translateX(-${currentIndex * 100}%)`,
-                            transition: 'transform 0.8s ease',
-                        }}
-                        src={image}
-                        alt={`Slide ${index + 1}`}
-                    />
-                ))}
+            <div className={styles.service__title}>
+                {locales[language].service__gallery}
+            </div>
+            <div className={styles.sliderContainer}>
+                <MdChevronLeft
+                    className={styles.sliderButton}
+                    onClick={slideLeft}
+                    size={40}
+                />
+                <div id="slider" ref={sliderRef} className={styles.slider}>
+                    {images.map((image, index) => (
+                        <div key={index} className={styles.sliderImage}>
+                            <img
+                                className={styles.sliderImageItem}
+                                src={image}
+                                alt="Slide"
+                            />
+                        </div>
+                    ))}
+                </div>
+                <MdChevronRight
+                    className={styles.sliderButton}
+                    onClick={slideRight}
+                    size={40}
+                />
             </div>
         </>
     );

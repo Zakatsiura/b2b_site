@@ -55,11 +55,13 @@ const Certificates = () => {
     return (
         <>
             <div className={styles.wrapper}>
-                <h2 className={styles.title}>
-                    {locales[language].certificates__titile}
-                </h2>
-                {Array.from({ length: Math.ceil(imagePaths.length / 2) }).map(
-                    (_, index) => (
+                <div className={styles.container}>
+                    <h2 className={styles.title}>
+                        {locales[language].certificates__titile}
+                    </h2>
+                    {Array.from({
+                        length: Math.ceil(imagePaths.length / 2),
+                    }).map((_, index) => (
                         <div key={index} className={styles.imageRow}>
                             {imagePaths
                                 .slice(index * 2, index * 2 + 2)
@@ -79,25 +81,25 @@ const Certificates = () => {
                                     </div>
                                 ))}
                         </div>
-                    )
-                )}
-                <Modal
-                    isOpen={modalIsOpen}
-                    onRequestClose={closeModal}
-                    contentLabel="Enlarged Image"
-                    ariaHideApp={false}
-                    shouldCloseOnOverlayClick={true}
-                >
-                    {selectedImage && (
-                        <img
-                            src={selectedImage}
-                            alt="Enlarged Certificate"
-                            className={styles.enlargedImage}
-                            onClick={closeModal}
-                        />
-                    )}
-                </Modal>
-                <ScrollToTopButton />
+                    ))}
+                    <Modal
+                        isOpen={modalIsOpen}
+                        onRequestClose={closeModal}
+                        contentLabel="Enlarged Image"
+                        ariaHideApp={false}
+                        shouldCloseOnOverlayClick={true}
+                    >
+                        {selectedImage && (
+                            <img
+                                src={selectedImage}
+                                alt="Enlarged Certificate"
+                                className={styles.enlargedImage}
+                                onClick={closeModal}
+                            />
+                        )}
+                    </Modal>
+                    <ScrollToTopButton />
+                </div>
             </div>
         </>
     );

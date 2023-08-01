@@ -1,5 +1,4 @@
 .tabs__wrapper {
-    max-width: 1400px;
     padding: 1rem;
     margin: 0 auto;
     text-align: left;
@@ -48,8 +47,6 @@
 .tabs__title_item:hover {
     color: var(--secondarygreen);
 }
-
-/* .tabs__content {} */
 
 .tabs__card {
     margin: 1rem auto;

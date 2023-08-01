@@ -1,15 +1,18 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: var(--primaryblack);
     background-color: var(--lightwhite);
     text-align: center;
 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.8rem;
 }
 
 .title {
