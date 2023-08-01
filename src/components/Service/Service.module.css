@@ -17,6 +17,8 @@
 }
 
 .service__text {
+    max-width: 1700px;
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 20px;
