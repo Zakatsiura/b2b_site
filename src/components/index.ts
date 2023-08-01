@@ -8,6 +8,7 @@ export * from './Footer/Footer';
 export * from './Header/Header';
 export * from './LanguageSwitcher/LanguageSwitcher';
 export * from './Main/Main';
+export * from './MainCard/MainCard';
 export * from './MainSlider/MainSlider';
 export * from './Menu/Menu';
 export * from './Mro/Mro';

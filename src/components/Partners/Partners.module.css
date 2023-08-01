@@ -7,13 +7,14 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: var(--primaryblack);
-
+    padding-bottom: 2rem;
 }
 
 .partners__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 1px;
+    margin: 3rem 0 0;
 }
 
 .partners__logo {

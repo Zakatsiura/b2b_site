@@ -1,9 +1,17 @@
-import { Main, Partners, ScrollToTopButton, TopSlider, Video } from '../components';
+import {
+    Main,
+    Partners,
+    ScrollToTopButton,
+    TopSlider,
+    Video,
+    MainCard,
+} from '../components';
 
 const MainPage = () => {
     return (
         <div>
-            <Video/>
+            <Video />
+            <MainCard />
             <Main />
             <Partners />
             <TopSlider />
