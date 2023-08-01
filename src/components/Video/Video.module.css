@@ -33,7 +33,7 @@ video {
     font-weight: 500;
     font-size: 4rem;
     opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
+    animation: fadeIn 4s linear forwards;
 }
 
 @keyframes fadeIn {

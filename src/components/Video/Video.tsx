@@ -6,7 +6,6 @@ import styles from './Video.module.css';
 import main from '../../assets/video/testvideo.mp4';
 
 const Video: React.FC = () => {
-    
     const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
@@ -46,7 +45,6 @@ const Video: React.FC = () => {
                 <div className={styles.content}>
                     <h1 className={styles.content}>
                         {locales[language].slogan}
-                        <p>test video</p>
                     </h1>
                 </div>
             </section>
