@@ -1,11 +1,14 @@
-.tabs__wrapper {
-    padding: 1rem;
-    margin: 0 auto;
+.wrapper {
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     color: var(--primaryblack);
     font-weight: 300;
     background-color: var(--lightwhite);
+    padding: 1rem;
+}
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .pic {

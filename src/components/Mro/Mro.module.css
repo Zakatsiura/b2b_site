@@ -1,12 +1,18 @@
 .wrapper {
-    margin: 0 auto;
     background-color: var(--lightwhite);
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     color: var(--primaryblack);
 }
 
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+
 .title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-weight: 500;
     text-align: center;

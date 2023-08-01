@@ -67,26 +67,30 @@ const Card = () => {
     return (
         <>
             <div className={styles.wrapper}>
-                {data.map((item) => (
-                    <div
-                        key={item.title}
-                        className={styles.card}
-                        style={{ backgroundImage: `url(${item.image})` }}
-                    >
-                        <div className={styles.card__content}>
-                            <h2 className={styles.card__title}>{item.title}</h2>
-                            <p className={styles.card__body}>{item.body}</p>
-                            <Link to={item.path}>
-                                <button
-                                    className={styles.btn}
-                                    onClick={scrollToTop}
-                                >
-                                    {locales[language].service__btntext}
-                                </button>
-                            </Link>
+                <div className={styles.container}>
+                    {data.map((item) => (
+                        <div
+                            key={item.title}
+                            className={styles.card}
+                            style={{ backgroundImage: `url(${item.image})` }}
+                        >
+                            <div className={styles.card__content}>
+                                <h2 className={styles.card__title}>
+                                    {item.title}
+                                </h2>
+                                <p className={styles.card__body}>{item.body}</p>
+                                <Link to={item.path}>
+                                    <button
+                                        className={styles.btn}
+                                        onClick={scrollToTop}
+                                    >
+                                        {locales[language].service__btntext}
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </>
     );
