@@ -7,7 +7,7 @@ const MainPage = () => {
             <Main />
             <Partners />
             <TopSlider />
-            <ScrollToTopButton/>
+            <ScrollToTopButton />
         </div>
     );
 };
