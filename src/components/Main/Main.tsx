@@ -16,29 +16,15 @@ const Main: React.FC = () => {
     return (
         <>
             <div className={style.main__wrapper}>
-                <div className={style.main__text}>
-                    <h2 className={style.main__title}>
-                        {locales[language].main__title}
-                    </h2>
-                    <p className={style.main__text}>
-                        {locales[language].main__p1}
-                    </p>
-                    <p className={style.main__text}>
-                        {locales[language].main__p2}
-                    </p>
-                    <p className={style.main__text}>
-                        {locales[language].main__p3}
-                    </p>
-                    <p className={style.main__text}>
-                        {locales[language].main__p4}
-                    </p>
-                    <p className={style.main__text}>
-                        {locales[language].main__p}
-                    </p>
-                    <p className={style.main__text}>
-                        {locales[language].main__p5}
-                    </p>
-                </div>
+                <h2 className={style.main__title}>
+                    {locales[language].main__title}
+                </h2>
+                <p className={style.main__text}>{locales[language].main__p1}</p>
+                <p className={style.main__text}>{locales[language].main__p2}</p>
+                <p className={style.main__text}>{locales[language].main__p3}</p>
+                <p className={style.main__text}>{locales[language].main__p4}</p>
+                <p className={style.main__text}>{locales[language].main__p}</p>
+                <p className={style.main__text}>{locales[language].main__p5}</p>
             </div>
         </>
     );
