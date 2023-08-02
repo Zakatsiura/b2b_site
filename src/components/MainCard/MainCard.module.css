@@ -90,7 +90,7 @@
     transition: opacity .5s, transform .4s;
     text-shadow: 1px 1px 3px var(--primaryblack);
     color: var(--primarywhite);
-    padding-top: 25%;
+    padding-top: 30%;
 }
 
 .figure:hover .img {
