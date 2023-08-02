@@ -3,7 +3,7 @@
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     color: var(--primaryblack);
-    background-color: var(--lightwhite);
+    background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
 }
 
 .wrapper {
