@@ -70,10 +70,10 @@ const TimeLine = () => {
               ];
     return (
         <div className={styles.wrapper}>
-            <h1>
+            <h1 className={styles.title}>
                 {language === 'en' ? 'Company Milestones' : 'Етапи розвитку'}
             </h1>
-            <ul>
+            <ul className={styles.list}>
                 {data.map((item, index) => (
                     <li className={styles.list__item} key={index}>
                         <div className={styles.date}>{item.year}</div>
