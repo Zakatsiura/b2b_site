@@ -41,14 +41,20 @@ const Footer = () => {
                         © B2B Aviation Trading 2023
                     </div>
                     <div className={style.footer__icon__block}>
-                        <a href="https://www.facebook.com/" target="blank">
+                        <a
+                            href="https://www.facebook.com/aleksey.butovich.7"
+                            target="blank"
+                        >
                             <img
                                 src={facebook}
                                 className={style.footer__icon}
                                 alt="fb icon"
                             />
                         </a>
-                        <a href="https://www.linkedin.com/" target="blank">
+                        <a
+                            href="https://www.linkedin.com/in/aleksey-butovich-14b021120/"
+                            target="blank"
+                        >
                             <img
                                 src={linkedin}
                                 className={style.footer__icon}
