@@ -13,8 +13,7 @@
     padding: 3rem 1rem;
 }
 
-.figure .figcaption,
-.figure .figcaption {
+ .figcaption {
     position: absolute;
     top: 0;
     right: 0;
@@ -25,7 +24,6 @@
 .figure {
     position: relative;
     max-width: 35ch;
-    width: 35ch;
     overflow: hidden;
     box-sizing: border-box;
     background: var(--lightwhite);
@@ -34,7 +32,10 @@
     margin-bottom: 2rem;
 }
 
-.figure .img {
+ .img {
+    display: block;
+    object-fit: cover;
+    max-height: 40rem;
     width: 100%;
     max-width: 100%;
     background-position: center;
@@ -45,14 +46,13 @@
 }
 
 .figure .figcaption {
-    box-sizing: border-box;
-    padding: 2rem;
+    padding: 1rem;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: var(--primarywhite);
     text-shadow: 1px 1px 3px #010101;
 }
 
-.figure .figcaption:after,
 .figure .figcaption:before {
     position: absolute;
     content: '';
@@ -97,14 +97,9 @@
     transform: scale(1.2);
 }
 
-.figure:hover .figcaption:after,
 .figure:hover .figcaption:before {
     opacity: 1;
     transform: scale(1);
-}
-
-.figure:hover .figcaption:after {
-    transition-delay: .15s;
 }
 
 .figure:hover h2,
