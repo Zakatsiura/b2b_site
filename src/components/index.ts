@@ -16,5 +16,6 @@ export * from './Partners/Partners';
 export * from './ScrollToTopButton/ScrollToTopButton';
 export * from './Service/Service';
 export * from './Tabs/Tabs';
+export * from './TimeLine/TimeLine';
 export * from './TopSlider/TopSlider';
 export * from './Video/Video';
