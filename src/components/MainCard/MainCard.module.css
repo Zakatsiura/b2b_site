@@ -30,6 +30,7 @@
     text-align: center;
     object-fit: cover;
     margin-bottom: 2rem;
+    cursor: pointer;
 }
 
  .img {
