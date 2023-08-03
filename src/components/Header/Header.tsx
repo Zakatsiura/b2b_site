@@ -40,7 +40,7 @@ const Header = () => {
                                 </span>
                                 B
                             </span>{' '}
-                            AVIATION TRADING
+                            Aviation Trading
                         </div>
                     </Link>
                 </div>

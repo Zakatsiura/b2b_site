@@ -5,7 +5,8 @@
     display: grid;
     align-content: center;
     gap: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Arial';
     font-weight: 300;
 }
 

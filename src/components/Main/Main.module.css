@@ -1,8 +1,9 @@
 .main__wrapper {
     background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Arial';
     font-weight: 300;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     color: var(--primaryblack);
 }
 

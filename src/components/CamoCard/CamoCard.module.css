@@ -3,7 +3,8 @@
     background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
     font-size: 1.2rem;
     letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Arial';
     font-weight: 300;
     color: var(--primaryblack);
     padding: 1rem;
@@ -23,8 +24,8 @@
 
 .card {
     height: 550px;
-    width: 35ch;
-    max-width: 35ch;
+    width: 40ch;
+    /* max-width: 35ch; */
     cursor: pointer;
     transform: translate(0%, 0%);
     margin: 1rem;
@@ -84,8 +85,8 @@
 @media (max-width: 576px) {
     .card {
             height: 400px;
-            width: 25ch;
-            max-width: 25ch;
+            width: 30ch;
+            /* max-width: 25ch; */
             cursor: pointer;
             transform: translate(0%, 0%);
             margin: 0;

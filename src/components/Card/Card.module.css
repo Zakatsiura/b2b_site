@@ -1,5 +1,6 @@
 .wrapper {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Arial';
     font-weight: 300;
     color: var(--primaryblack);
     background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
@@ -18,9 +19,9 @@
     background-size: cover;
     background-position: center;
     padding: 35rem 0 0;
-    max-height: 300px;
-    max-width: 35ch;
-    width: 35ch;
+    max-height: 250px;
+    /* max-width: 35ch; */
+    width: 40ch;
     margin: 2rem;
     border-radius: 0.5rem;
     overflow: hidden;

@@ -10,7 +10,8 @@
     background: var(--lightgreen);
     transform: translate(100%);
     transition: all 0.45s;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Arial';
     font-weight: 500;
 }
 

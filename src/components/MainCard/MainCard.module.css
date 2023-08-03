@@ -1,5 +1,6 @@
 .wrapper {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Arial';
     background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
 }
 
@@ -49,7 +50,8 @@
 .figure .figcaption {
     padding: 1rem;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Arial'; */
     color: var(--primarywhite);
     text-shadow: 1px 1px 3px #010101;
 }
