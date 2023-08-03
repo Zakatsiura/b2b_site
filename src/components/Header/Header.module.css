@@ -74,4 +74,12 @@
     .header__link_text {
         display: none;
     }
+
+    .logo__small {
+        width: 60px;
+    }
+
+    .header {
+        height: 80px;
+    }
 }
