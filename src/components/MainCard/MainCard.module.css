@@ -1,7 +1,7 @@
 .wrapper {
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Arial';
-    background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
+    /* background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%); */
 }
 
 .container {

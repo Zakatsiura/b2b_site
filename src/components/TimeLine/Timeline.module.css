@@ -1,6 +1,6 @@
 .wrapper {
     color: var(--primaryblack);
-    background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
+    /* background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%); */
     min-height: 100vh;
     display: grid;
     align-content: center;

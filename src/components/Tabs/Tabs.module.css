@@ -4,7 +4,7 @@
     font-family: 'Arial';
     color: var(--primaryblack);
     font-weight: 300;
-    background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%);
+    /* background: linear-gradient(to right, var(--lightgreen) 0%, var(--lightwhite) 50%, var(--lightgreen) 100%); */
     padding: 1rem;
 }
 .container {
