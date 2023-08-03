@@ -1,12 +1,12 @@
 import { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 import style from './Header.module.css';
 import menu from '../../assets/images/burger-menu-icon.jpg';
-import logo_small from '../../assets/images/logo_small.png';
+import logo_small from '../../assets/images/Logo_original_stroked.png';
 import { LanguageContext } from '../../context/languageContext';
 import { locales } from '../../locales/locales';
 import { Menu } from '../Menu/Menu';
-import { Link } from 'react-router-dom';
 import { LanguageSwitcher } from '../LanguageSwitcher/LanguageSwitcher';
 
 const Header = () => {
