@@ -5,7 +5,7 @@ import {
     TopSlider,
     Video,
     MainCard,
-    TimeLine,
+    // TimeLine,
 } from '../components';
 
 const MainPage = () => {
@@ -14,7 +14,7 @@ const MainPage = () => {
             <Video />
             <MainCard />
             <Main />
-            <TimeLine />
+            {/* <TimeLine /> */}
             <Partners />
             <TopSlider />
             <ScrollToTopButton />
